@@ -20,3 +20,9 @@ dist/
 
 #files adobeXD
 *.xd
+
+#node_modules files
+node_modules/
+
+#pugcli
+pugcli.txt

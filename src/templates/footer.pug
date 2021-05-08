@@ -1,0 +1,43 @@
+- 
+    const socialLinks = [
+        {
+            "name": "instagram",
+            "url": "https://www.instagram.com/sukeyosi/",
+            "slug": "sukeyosi"
+        },
+        {
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/in/sukeyosi/",
+            "slug": "sukeyosi"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com/lusuke",
+            "slug": "lusuke"
+        }
+    ]
+
+footer.footer 
+    .footer__items
+        img(src="../src/assets/Grupo 28.png", alt="Lusuke Website")
+        p.padding-48. 
+            &copy; 2021 – Some rights reserved. Lucas Sukeyosi aka lusuke. 
+            Website typefaces: #[a(href="https://fonts.google.com/specimen/Syncopate" class="main--green") Syncopate] 
+            & #[a(href="https://fonts.google.com/specimen/Lato" class="main--green" target="_blank") Lato].
+            A sincere thanks to #[a(href="https://github.com/richarallan" target="_blank" class="main--green") Richar]
+            that borrow his expertise in development, made it possible.
+        //- about__professional -> main--greenlink
+    
+    .footer__items
+        h3.footer__items--text You scroll it All the way Through
+        ul.footer__menu
+            each val, key in {'workLink': 'work', 'aboutLink': 'about', 'blogLink': 'Blog', 'ContactLink': 'Lets Talk', 'privacyLink': 'Privacy & Terms'}
+                li: a(href=`${ key }`)= val
+    
+    .footer__items
+        h3.footer__items--text Let's drink a e-coffee
+        ul.footer__socialm
+            each socialmedia in socialLinks
+                +socialmedia(socialmedia.name, socialmedia.url, socialmedia.slug)
+            //- each val, key in {'instagramLink': 'sukeyosi', 'linkdinLink': 'sukeyosi', 'twitter': 'lusuke'}
+            //-     li: a(href=`${key}` target="_blank"): i.bi.bi-twitter= val

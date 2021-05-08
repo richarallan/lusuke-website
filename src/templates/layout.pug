@@ -1,0 +1,16 @@
+//- include ..data/data
+include ../mixins/mixinsfooter
+
+doctype html
+html(lang="en")
+    include head
+    body
+        header.menu
+            include header
+
+        main.main
+            block main
+                h1 Oi José
+
+        block footer
+            include footer

@@ -1,0 +1,37 @@
+html,
+body {
+  background-color: $beige;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  font-variant-ligatures: none;
+  -webkit-text-size-adjust: 100%;
+  font-family: "lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  color: $black;
+
+  & figure {
+    margin: 0;
+    padding: 0;
+  }
+}
+a {
+  color: $black;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+$base-color: 16;
+
+@for $i from 16 through 80 {
+  .navigation-#{$i} {
+    padding: ($i / $base-color) + rem 0;
+  }
+}

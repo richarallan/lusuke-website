@@ -1,0 +1,5 @@
+a.menu__logotype(href="")
+nav
+    ul.menu__contents.navigation
+        each val, key in {'#jesus': 'work', '#about': 'about', '#journal': 'journal', '#contact': 'open to work'}
+            li.navigation__item: a.navigation__link(href=`${ key }`)= val

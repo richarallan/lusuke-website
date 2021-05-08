@@ -1,9 +1,23 @@
 {
   "name": "lusuke-website",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "description": "Lucas Sukeyosi Website & blog",
+  "author": "Richar Allan Macedo <richar.silvamacedo@gmail.com> (https://www.linkedin.com/in/richarallan)",
+  "contributors": [
+    "Lucas Sukeyosi <lusuke@gmail.com> (http://lusuke.com.br)"
+  ],
+  "private": true,
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.pug"
+  },
+  "devDependencies": {
+    "sass": "^1.32.12"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.1",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }

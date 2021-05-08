@@ -1,0 +1,58 @@
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: $black;
+  color: $beige;
+  padding: 3rem 3.4vw;
+
+  &__items {
+    flex: 1;
+    padding: 3rem calc((1 / 10) * 100%) 3rem 0;
+
+    &--text {
+      font: normal normal bolder 1.5rem "Syncopate";
+      text-transform: uppercase;
+      padding-bottom: 1.5rem;
+    }
+  }
+  &__menu a {
+    color: $beige;
+  }
+  &__socialm {
+    margin-top: 1.5rem;
+    padding: 0;
+    & li {
+      display: inline-block;
+      padding: 0 1.5rem 0 0;
+    }
+    & a {
+      color: $beige;
+      font-size: 0.75rem;
+      &:hover {
+        color: $green;
+      }
+      & i {
+        margin-right: 0.5rem;
+        font-style: normal;
+      }
+    }
+  }
+  &__slug {
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    &__items:first-child {
+      text-align: left;
+      order: 3;
+    }
+    &__items:last-child {
+      order: -1;
+    }
+  }
+}

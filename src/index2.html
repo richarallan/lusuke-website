@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="scss/main.scss">
+    <!--<link rel="stylesheet" href="globals.css">-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,9 +20,9 @@
 </head>
 
 <body>
-    <header class="header-menu">
-        <a href="#"><svg id="FULL_LOGO" data-name="FULL LOGO" xmlns="http://www.w3.org/2000/svg" width="270.4"
-                height="32" viewBox="0 0 270.4 32">
+    <header class="menu">
+        <a href="#" class="menu__logotype"><svg id="FULL_LOGO" data-name="FULL LOGO" xmlns="http://www.w3.org/2000/svg"
+                width="270.4" height="32" viewBox="0 0 270.4 32">
                 <path id="Caminho_36" data-name="Caminho 36"
                     d="M119.3,92.955h3.673v1.482H119.3Zm-.889-.857v3.548h.889v-.36h3.673v.36h.914V92.1Z"
                     transform="translate(-73.964 -66.872)" fill="#1c1c1c" />
@@ -60,11 +61,19 @@
             </svg></a>
 
         <nav>
+            <ul class="menu__contents navigation">
+                <li class="navigation-1"><a href="" class="navigation__link">work</a></li>
+                <li class="navigation-2"><a href="" class="navigation__link">about</a></li>
+                <li class="navigation-3"><a href="" class="navigation__link">journal</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">open to work</a></li>
+            </ul>
+        </nav>
+        <nav>
             <ul class="menu">
                 <li><a href="#">work</a></li>
                 <li><a href="#">about</a></li>
                 <li><a href="journal.html">journal</a></li>
-                <li><a href="#" class="menu-button">open to work</a></li>
+                <li class="menu__item--green"><a href="#" class="menu-button">open to work</a></li>
             </ul>
         </nav>
     </header>
