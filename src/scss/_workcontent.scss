@@ -1,0 +1,27 @@
+.main__works {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 0 6rem;
+  &--grid {
+    padding: 0 26.5vw;
+  }
+}
+.service {
+  display: flex;
+  flex-flow: row wrap;
+  &__header {
+    width: 10vw;
+  }
+  &__contents {
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service {
+    flex-flow: column nowrap;
+  }
+}
+.main__view img {
+  width: 100%;
+}

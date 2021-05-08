@@ -17,6 +17,9 @@
   &--text {
     @include fluid-font(1.5rem, 1.5rem);
   }
+  &--italic {
+    font-style: italic;
+  }
   &--green {
     color: $green;
   }

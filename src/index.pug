@@ -37,16 +37,14 @@ block main
     section#works.main__works
         figure
             img(src="assets/work-file.svg", alt="Latest Works")
-        h1.main--header work file
-        p.main--text.
-            I thrive to go beyond the software. Passion with art since a kid, 
-            working with design since the 2000s, well, a kid also.
-        p.main--italic.
-            Some snapshots and a briefing description of each select project 
-            while I’m working on the full case studies. Other than that, this 
-            portfolio would be far from being online. Not the ideal world, but 
-            don’t forget that I’m also an Economist.
-        article.main__service
-            //- main__service === works__latests
-            header.main__service--info
-                h3 olá maria
+        .main__works--grid
+            h1.main--header work file
+            p.main--text.
+                I thrive to go beyond the software. Passion with art since a kid, 
+                working with design since the 2000s, well, a kid also.
+            p.main--italic.
+                Some snapshots and a briefing description of each select project 
+                while I’m working on the full case studies. Other than that, this 
+                portfolio would be far from being online. Not the ideal world, but 
+                don’t forget that I’m also an Economist.
+        include templates/workcontent
