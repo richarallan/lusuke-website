@@ -1,5 +1,11 @@
-a.menu__logotype(href="")
-nav
-    ul.menu__contents.navigation
+a.menu__logotype(href="#")
+    //- img(src="assets/FULL LOGO.svg", alt="Lusuke website")
+    //- img(src="assets/icon-logo.svg", alt="Lusuke Website")
+    img(src="assets/FULL LOGO.svg", alt="Lusuke Website")
+
+label(for="menu__mob") &#9776;
+input(type="checkbox", name="menu__mob", id="menu__mob", class="menu--mobile")
+nav.menu--nav
+    ul.menu__navigation
         each val, key in {'#jesus': 'work', '#about': 'about', '#journal': 'journal', '#contact': 'open to work'}
-            li.navigation__item: a.navigation__link(href=`${ key }`)= val
+            li.menu__item: a.menu__link(href=`${ key }`)= val

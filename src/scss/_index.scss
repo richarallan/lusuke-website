@@ -30,6 +30,9 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    padding-top: 90px;
+    margin: 0 auto;
+    width: auto;
     height: 100vh;
 
     & img {
@@ -45,21 +48,21 @@
     }
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1256px) {
     &__about {
       display: flex;
       margin: 5rem 0;
       flex-flow: row wrap;
       padding-right: 6rem;
-      height: 100vh;
+      // height: 100vh;
     }
     &__avatar {
-      width: 50vw;
+      width: 100%;
       flex: 1;
     }
     &__me {
-      width: 21.5vw;
-      margin: 0 18.5vw 0 10vw;
+      width: 414px; /* definir largura // old: 21.5vw */
+      padding: 1.5rem 20rem 1.5rem 5rem; /* olds values: margin: 0 18.5vw 0 10vw; */
     }
     &__button {
       display: block;
@@ -78,10 +81,10 @@
       }
     }
   }
-  @media screen and (min-width: 1200px) and (max-width: 1599px) {
+  @media screen and (min-width: 1256px) and (max-width: 1599px) {
     &__about {
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: column wrap;
       padding-right: 6rem;
       margin: 5rem 0;
       height: 100vh;
@@ -91,7 +94,7 @@
       flex: 1;
     }
     &__me {
-      width: 30vw;
+      width: 40vw; /* 30vw old value */
       padding-left: 5vw;
     }
     &__button {
@@ -111,11 +114,10 @@
       }
     }
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1255px) {
     &__about {
       display: flex;
       flex-flow: column wrap;
-      margin-bottom: 8rem;
     }
     &__avatar {
       width: 100%;
@@ -153,7 +155,11 @@
     flex-flow: column wrap;
     text-align: center;
     justify-content: center;
-    padding: 10rem 6rem;
+    padding: 8rem 6rem 5rem 6rem;
+
+    > figure > h1 {
+      margin: 5rem 0 8rem 0;
+    }
 
     &--grid {
       padding: 0 26.5vw;
@@ -161,10 +167,10 @@
     }
 
     &--page {
-      width: 28vw;
+      width: 560px;
       margin: 10rem auto;
       & img {
-        width: 20%;
+        width: 15%;
       }
 
       & p {
@@ -176,6 +182,14 @@
       text-decoration: line-through;
     }
   }
+
+  @media screen and (max-width: 560px) {
+    &__works--page {
+      width: auto;
+      padding: 0 1.75rem;
+      margin-bottom: 5rem;
+    }
+  }
   &__view--pic {
     width: 100%;
     display: block;
@@ -184,7 +198,7 @@
     font: normal normal bolder 1.5rem "Syncopate", "sans-serif";
     text-transform: uppercase;
   }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1255px) {
     &__works {
       margin: 0 auto;
       display: block;
@@ -206,5 +220,11 @@
   }
   &__view {
     margin-top: 3.75rem;
+  }
+
+  /* blog */
+  &__blog {
+    display: block;
+    padding: 0 3.4vw;
   }
 }

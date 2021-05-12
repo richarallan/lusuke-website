@@ -3,12 +3,14 @@ extends templates/layout
 block main
     section.main__intro
         figure
-            img(src="assets/lucas-presenting-your-skills.svg", alt="Lucas presenting your skills: beer crafter, coffee lover, garage musician, graduate economics finances and master digital marketing and design")
+            h1 
+                img(src="assets/lucas-presenting-your-skills.svg", alt="Lucas presenting your skills: beer crafter, coffee lover, garage musician, graduate economics finances and master digital marketing and design")
     
     section#about.main__about
         .main__avatar
             figure
-                img(src="assets/lucas-sukeyosi.jpg", alt="Lucas Sukeyosi")
+                h1
+                    img(src="assets/lucas-sukeyosi.jpg", alt="Lucas Sukeyosi")
         .main__me
             h1.main--header Olá
                 br
@@ -36,7 +38,8 @@ block main
     
     section#works.main__works
         figure
-            img(src="assets/work-file.svg", alt="Latest Works")
+            h1
+                img(src="assets/work-file.svg", alt="Latest Works")
         .main__works--grid
             h1.main--header work file
             p.main--text.
@@ -51,3 +54,33 @@ block main
         .main__works--page
             img(src="assets/goto-portifolio.png", alt="Go to my portfolio")
             p.main__service--title #[a(href="#") You can always #[span.main--green open the door of my portfolio] #[span.main__works--risk (read here a lot of snapshots and brief description)] to see a little more.]
+    
+    section#blog.main__blog.blog
+        h1.main--header blog
+        .blog__grid
+            p.main--text. 
+            
+                Pieces of economics/finance, business, and design. Trying to open my 
+                mind through writing, and hopefully, serve as a piece of knowledge to 
+                yours.
+
+            p.main--italic.
+                All the posts are a reflection of 
+                my own and I’m not here to sell anything. Views are personal and are 
+                not recommendations.
+        article.blog__contents
+            .blog__image
+                img(src="assets/bermix-studio-aX1hN4uNd-I-unsplash.jpg" alt="What the value of money?")
+            .blog__frame
+                 ul.blog__frame--ul
+                    li.blog__frame--li Economics
+                    li.blog__frame--li Finance
+                    li.blog__frame--li Philosophy
+
+                 h1.main__service--title what the value of money?
+                 p.blog__frame--grid.main--normal. 
+                    Pieces of economics/finance, business, and design. Trying to open my 
+                    mind through writing, and hopefully, serve as a piece of knowledge to 
+                    yours.
+                 a(href="#" class="blog__frame--button") #[i.bi.bi-arrow-up-right] Read the article
+        a(href="#" class="blog__grid--button main__button") check out my journal
