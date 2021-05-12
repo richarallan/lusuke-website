@@ -13,6 +13,7 @@
   &--normal {
     @include fluid-font(1rem, 1rem);
     margin: 0.5rem 0 2.5rem 0;
+    font-weight: normal;
   }
   &--text {
     @include fluid-font(1.5rem, 1.5rem);
@@ -133,7 +134,7 @@
       text-transform: uppercase;
       border: 0.5rem solid #75b9a5;
       color: #75b9a5;
-      margin: 5.5rem 0;
+      margin: 5.5rem auto;
       &:hover {
         background-color: #75b9a5;
         color: #efefe6;
@@ -144,5 +145,66 @@
 
   &__avatar img {
     width: 100%;
+  }
+  /* Service */
+  &__works {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 10rem 6rem;
+
+    &--grid {
+      padding: 0 26.5vw;
+      margin-bottom: 4rem;
+    }
+
+    &--page {
+      width: 28vw;
+      margin: 10rem auto;
+      & img {
+        width: 20%;
+      }
+
+      & p {
+        line-height: 1.5;
+      }
+    }
+
+    &--risk {
+      text-decoration: line-through;
+    }
+  }
+  &__view--pic {
+    width: 100%;
+    display: block;
+  }
+  &__service--title {
+    font: normal normal bolder 1.5rem "Syncopate", "sans-serif";
+    text-transform: uppercase;
+  }
+  @media screen and (max-width: 1024px) {
+    &__works {
+      margin: 0 auto;
+      display: block;
+      padding: 0 0 10rem 0;
+      text-align: center;
+
+      &--grid {
+        padding: 0 3rem;
+        margin-bottom: 0;
+      }
+    }
+    &__view--pic {
+      width: 100%;
+      justify-content: center;
+    }
+    &__view {
+      margin-top: 0.25rem;
+    }
+  }
+  &__view {
+    margin-top: 3.75rem;
   }
 }
