@@ -22,4 +22,17 @@
     padding: 1rem 0.75rem;
     font-size: 0.8rem;
   }
+  .footer {
+    &__items {
+      padding: 2rem 1rem;
+      &--text {
+        font-size: 0.85rem;
+      }
+    }
+    &__social {
+      > li {
+        padding: 0 0;
+      }
+    }
+  }
 }
