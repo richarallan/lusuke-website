@@ -7,7 +7,7 @@
     line-height: 1.2;
     font-family: "Syncopate", "sans-serif";
     text-transform: uppercase;
-    @include fluid-font(2.5rem, 3rem);
+    @include fluid-font(2rem, 3rem);
     margin: 0 0 2.625rem 0;
   }
   &--normal {
@@ -16,7 +16,7 @@
     font-weight: normal;
   }
   &--text {
-    @include fluid-font(1.5rem, 1.5rem);
+    @include fluid-font(1.1rem, 1.5rem);
   }
   &--italic {
     font-style: italic;
@@ -61,8 +61,13 @@
       flex: 1;
     }
     &__me {
-      width: 414px; /* definir largura // old: 21.5vw */
+      width: 50%; /* definir largura // old: 21.5vw */
       padding: 1.5rem 20rem 1.5rem 5rem; /* olds values: margin: 0 18.5vw 0 10vw; */
+      box-sizing: border-box;
+
+      &--grid {
+        width: 414px;
+      }
     }
     &__button {
       display: block;
@@ -125,7 +130,7 @@
     &__me {
       padding: 3rem 3rem 3rem 1.75rem;
       text-align: left;
-      height: 100vh;
+      height: 100%;
     }
     &__button {
       display: block;
@@ -206,7 +211,7 @@
       text-align: center;
 
       &--grid {
-        padding: 0 3rem;
+        padding: 0 3rem 6rem 3rem;
         margin-bottom: 0;
       }
     }

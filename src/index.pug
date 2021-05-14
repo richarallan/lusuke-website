@@ -12,29 +12,30 @@ block main
                 h1
                     img(src="assets/lucas-sukeyosi.jpg", alt="Lucas Sukeyosi")
         .main__me
-            h1.main--header Olá
-                br
-                . 
-                    I'm Lucas
-                br
-                . 
-                    Sukeyosi.
-            p.main--normal. 
-                A Latin American self-taught multidisciplinary designer,
-                with a degree in economics.
-            //- esse main normal, talvez possar ser o padrão do body
-            p.main--text You can say I’m a #[span.main--green multidisciplinary Designer or an Economist specializing in finance, investment, and banking].
-                br
-                br
-                . 
-                    Other than that I’m a garage musician, 
-                    former national judo champion, always 
-                    a curious and wandering learner. An
-                    avid defender of doing things with love, 
-                    honesty, and authenticity – producing
-                    and serving humanity, always with a
-                    purpose.
-            a(href="#" class="main__button") read more
+            .main__me--grid
+                h1.main--header Olá
+                    br
+                    . 
+                        I'm Lucas
+                    br
+                    . 
+                        Sukeyosi.
+                p.main--normal. 
+                    A Latin American self-taught multidisciplinary designer,
+                    with a degree in economics.
+                //- esse main normal, talvez possar ser o padrão do body
+                p.main--text You can say I’m a #[span.main--green multidisciplinary Designer or an Economist specializing in finance, investment, and banking].
+                    br
+                    br
+                    . 
+                        Other than that I’m a garage musician, 
+                        former national judo champion, always 
+                        a curious and wandering learner. An
+                        avid defender of doing things with love, 
+                        honesty, and authenticity – producing
+                        and serving humanity, always with a
+                        purpose.
+                a(href="#" class="main__button") read more
     
     section#works.main__works
         figure
@@ -50,7 +51,9 @@ block main
                 while I’m working on the full case studies. Other than that, this 
                 portfolio would be far from being online. Not the ideal world, but 
                 don’t forget that I’m also an Economist.
+                
         include templates/workcontent
+
         .main__works--page
             img(src="assets/goto-portifolio.png", alt="Go to my portfolio")
             p.main__service--title #[a(href="#") You can always #[span.main--green open the door of my portfolio] #[span.main__works--risk (read here a lot of snapshots and brief description)] to see a little more.]

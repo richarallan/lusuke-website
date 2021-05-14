@@ -1,0 +1,25 @@
+@media screen and (max-width: 320px) {
+  .main {
+    &__button {
+      padding: 1rem 2rem;
+    }
+    &__me {
+      padding: 3rem 1.25rem;
+    }
+    &--header {
+      font-size: 1.5rem;
+    }
+    &--text {
+      font-size: 1rem;
+    }
+    &__service {
+      &--title {
+        font-size: 1rem;
+      }
+    }
+  }
+  .blog__grid--button {
+    padding: 1rem 0.75rem;
+    font-size: 0.8rem;
+  }
+}

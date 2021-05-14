@@ -44,6 +44,10 @@
   @media screen and (max-width: 1255px) {
     &__grid {
       width: auto;
+
+      &--button {
+        padding: 0.825rem 1.25rem;
+      }
     }
     &__contents {
       display: block;

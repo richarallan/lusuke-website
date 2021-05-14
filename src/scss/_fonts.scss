@@ -1,2 +1,11 @@
-@media screen and (max-width: 1255) {
+@media screen and (max-width: 460px) {
+  .main {
+    &--text {
+      font-size: 1rem;
+    }
+
+    &--header {
+      font-size: 2rem;
+    }
+  }
 }
