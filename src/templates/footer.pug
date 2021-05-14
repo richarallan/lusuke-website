@@ -1,22 +1,3 @@
-- 
-    const socialLinks = [
-        {
-            "name": "instagram",
-            "url": "https://www.instagram.com/sukeyosi/",
-            "slug": "sukeyosi"
-        },
-        {
-            "name": "linkedin",
-            "url": "https://www.linkedin.com/in/sukeyosi/",
-            "slug": "sukeyosi"
-        },
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/lusuke",
-            "slug": "lusuke"
-        }
-    ]
-
 footer.footer 
     .footer__items
         img(src="../src/assets/Grupo 28.png", alt="Lusuke Website")
@@ -40,4 +21,4 @@ footer.footer
             each socialmedia in socialLinks
                 +socialmedia(socialmedia.name, socialmedia.url, socialmedia.slug)
             //- each val, key in {'instagramLink': 'sukeyosi', 'linkdinLink': 'sukeyosi', 'twitter': 'lusuke'}
-            //-     li: a(href=`${key}` target="_blank"): i.bi.bi-twitter= val
+            //-     li: a(href=`${key}` target="_blank"): i.bi.bi-twitter= val 

@@ -11,6 +11,10 @@
   background-color: $beige;
   z-index: 2;
 
+  &__logotype--mobile {
+    display: none;
+  }
+
   &--mobile {
     display: none;
   }
@@ -65,13 +69,16 @@
 @media screen and (max-width: 1255px) {
   .menu {
     display: block;
+    // align-items: flex-start;
+    // justify-content: space-around;
     padding: 1.5rem 0;
     height: 40px;
+    width: 100vw;
     background-color: $beige;
-    z-index: 9999;
 
     &--mobile {
       float: right;
+      // display: none;
     }
 
     & label[for="menu__mob"] {
@@ -133,6 +140,18 @@
     #menu__mob:checked ~ nav {
       transform: rotateX(0);
       transition: all 0.4s;
+    }
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .menu__logotype {
+    &--desktop {
+      display: none;
+    }
+
+    &--mobile {
+      display: block;
     }
   }
 }

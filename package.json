@@ -10,13 +10,18 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/index.pug"
+    "dev": "parcel src/index.pug",
+    "build": "parcel build src/index.pug"
   },
   "devDependencies": {
+    "@parcel/transformer-pug": "^2.0.0-beta.2",
+    "cssnano": "^5.0.2",
+    "postcss": "^8.2.1",
     "sass": "^1.32.12"
   },
   "dependencies": {
     "normalize-scss": "^7.0.1",
+    "parcel": "^2.0.0-beta.2",
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6"
   }
