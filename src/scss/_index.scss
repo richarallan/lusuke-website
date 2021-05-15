@@ -24,6 +24,18 @@
   &--green {
     color: $green;
   }
+  /* title and desc: all pages - font */
+  &__page {
+    &--title {
+      @include fluid-font(1rem, 1.5rem);
+      font-weight: normal;
+    }
+    &--desc {
+      @include fluid-font(1.3rem, 3rem);
+      font-family: "Syncopate", "sans-serif";
+      text-transform: uppercase;
+    }
+  }
 
   &__intro {
     display: flex;

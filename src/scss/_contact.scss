@@ -1,0 +1,185 @@
+.main {
+  &__contact {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 4.5vw 0 3.4vw;
+    width: 100%;
+    height: auto;
+    margin: 24% auto 15% auto;
+    transform: translateY(-25%);
+  }
+
+  &__goto {
+    font-family: "Syncopate";
+    text-transform: uppercase;
+    font-weight: bolder;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 271px;
+    margin-top: 8rem;
+
+    &:hover {
+      border-color: $green;
+      color: $green;
+
+      & div {
+        border-color: $green;
+        transition: all 2ms ease-out;
+      }
+
+      & div:only-child {
+        border-color: $beige;
+        transition: all 2ms ease-out;
+      }
+    }
+  }
+
+  &__form {
+    padding: 5vh 3.4vw;
+    height: 100%;
+    margin-bottom: 15rem;
+
+    &--contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      row-gap: 3rem;
+      padding: 0 20vw;
+    }
+
+    &--grid {
+      display: flex;
+      flex-flow: column wrap;
+    }
+
+    &--label {
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+      box-sizing: border-box;
+      text-transform: uppercase;
+    }
+
+    &--input {
+      color: $black;
+      width: 100%;
+      height: 3rem;
+      background: none;
+      border: none;
+      border-bottom: 1px solid $green;
+      font-size: 1rem;
+
+      &::-webkit-input-placeholder,
+      &::-moz-placeholder,
+      &::-ms-input-placeholder {
+        color: $green;
+      }
+      &::placeholder {
+        color: $green;
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &--textarea {
+      width: 100%;
+      height: 3rem;
+      line-height: 1.5;
+      background: none;
+      border: none;
+      border-bottom: 1px solid $green;
+      font-family: "lato", "sans-serif";
+      font-size: 1rem;
+
+      &::-webkit-input-placeholder,
+      &::-moz-placeholder,
+      &::-ms-input-placeholder {
+        color: $green;
+      }
+
+      &::placeholder {
+        color: $green;
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &--submit {
+      font-family: "Syncopate";
+      color: $green;
+      text-transform: uppercase;
+      width: 170px;
+      padding: 1rem 2rem;
+      border: 0.5rem solid;
+      border-radius: 2.1875rem;
+      font-weight: bolder;
+      background: none;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      margin: 6rem 0;
+
+      &:hover {
+        background-color: $green;
+        color: $beige;
+        transition: all 2ms ease-in-out;
+      }
+    }
+
+    &--icon {
+      margin-left: 0.5rem;
+      font-weight: bolder;
+      transform: scale(1.1);
+    }
+  }
+
+  @media screen and (max-width: 1255px) {
+    &__contact {
+      padding: 10rem 1.5rem 0 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__form {
+      &--contact {
+        display: block;
+        padding: 0 0.75rem;
+      }
+
+      &--grid {
+        margin-top: 4rem;
+      }
+
+      &--submit {
+        display: block;
+        margin: 6rem auto 2rem auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    &__contact {
+      width: 100%;
+      padding: 5rem 1.5rem;
+      margin: 6rem 0;
+      transform: none;
+    }
+
+    &__goto {
+      transform: scale(0.8);
+    }
+  }
+  @media screen and (max-width: 380px) {
+    height: 100%;
+  }
+}

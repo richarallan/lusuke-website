@@ -28,10 +28,3 @@ a {
     text-decoration: none;
   }
 }
-$base-color: 16;
-
-@for $i from 16 through 80 {
-  .navigation-#{$i} {
-    padding: ($i / $base-color) + rem 0;
-  }
-}
