@@ -1,41 +1,4 @@
 .main {
-  &__contact {
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: column wrap;
-    padding: 0 4.5vw 0 3.4vw;
-    width: 100%;
-    height: auto;
-    margin: 24% auto 15% auto;
-    transform: translateY(-25%);
-  }
-
-  &__goto {
-    font-family: "Syncopate";
-    text-transform: uppercase;
-    font-weight: bolder;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    width: 271px;
-    margin-top: 8rem;
-
-    &:hover {
-      border-color: $green;
-      color: $green;
-
-      & div {
-        border-color: $green;
-        transition: all 2ms ease-out;
-      }
-
-      & div:only-child {
-        border-color: $beige;
-        transition: all 2ms ease-out;
-      }
-    }
-  }
-
   &__form {
     padding: 5vh 3.4vw;
     height: 100%;
@@ -143,12 +106,6 @@
     }
   }
 
-  @media screen and (max-width: 1255px) {
-    &__contact {
-      padding: 10rem 1.5rem 0 1.5rem;
-    }
-  }
-
   @media screen and (max-width: 768px) {
     &__form {
       &--contact {
@@ -165,21 +122,5 @@
         margin: 6rem auto 2rem auto;
       }
     }
-  }
-
-  @media screen and (max-width: 460px) {
-    &__contact {
-      width: 100%;
-      padding: 5rem 1.5rem;
-      margin: 6rem 0;
-      transform: none;
-    }
-
-    &__goto {
-      transform: scale(0.8);
-    }
-  }
-  @media screen and (max-width: 380px) {
-    height: 100%;
   }
 }
