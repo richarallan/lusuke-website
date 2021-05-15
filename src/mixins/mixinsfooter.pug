@@ -1,2 +1,5 @@
 mixin socialmedia(name, url, slug)
-    li: a(href=`${url}` target="_blank"): i(class=`bi bi-${name}`): span(class="footer__slug") #{slug}
+    li 
+        a(href=`${url}` target="_blank")
+            i(class=`bi bi-${name}`)
+            span(class="footer__slug") #{slug}

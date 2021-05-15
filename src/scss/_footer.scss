@@ -15,9 +15,20 @@
       padding-bottom: 1.5rem;
     }
   }
-  &__menu a {
-    color: $beige;
-    text-transform: capitalize;
+  &__menu {
+    list-style: none;
+    & a {
+      color: $beige;
+      text-transform: capitalize;
+
+      &:hover {
+        color: $green;
+      }
+
+      &::before {
+        content: "– ";
+      }
+    }
   }
   &__socialm {
     margin-top: 1.5rem;
