@@ -30,3 +30,6 @@ pugcli.txt
 
 #parcel-cache
 .parcel-cache/
+
+#backup
+backup/
