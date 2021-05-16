@@ -31,13 +31,9 @@ a {
 .main {
   &__page {
     box-sizing: border-box;
-    display: flex;
-    flex-flow: column wrap;
+    display: block;
     padding: 0 4.5vw 0 3.4vw;
-    width: 100%;
-    height: auto;
-    margin: 24% auto 15% auto;
-    transform: translateY(-25%);
+    margin: 17rem 0 20rem 0;
   }
 
   &__goto {
@@ -77,7 +73,6 @@ a {
       width: 100%;
       padding: 5rem 1.5rem;
       margin: 6rem 0;
-      transform: none;
     }
 
     &__goto {
