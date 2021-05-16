@@ -1,4 +1,4 @@
-a.menu__logotype(href="index.pug")
+a.menu__logotype(href="#")
     //- img(src="assets/FULL LOGO.svg", alt="Lusuke website")
     img(src="assets/icon-logo.svg", alt="Lusuke Website", class="menu__logotype--mobile")
     img(src="assets/lusuke__logo--desktop.svg", alt="Lusuke Website", class="menu__logotype--desktop")
@@ -7,5 +7,5 @@ label(for="menu__mob") &#9776;
 input(type="checkbox", name="menu__mob", id="menu__mob", class="menu--mobile")
 nav.menu--nav
     ul.menu__navigation
-        each val, key in {'#jesus': 'work', '#about': 'about', '#journal': 'journal', 'contact.pug': 'open to work'}
+        each val, key in {'#jesus': 'work', '#about': 'about', '#journal': 'journal', '#contact': 'open to work'}
             li.menu__item: a.menu__link(href=`${ key }`)= val
