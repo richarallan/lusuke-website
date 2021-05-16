@@ -7,11 +7,10 @@
     "Lucas Sukeyosi <lusuke@gmail.com> (http://lusuke.com.br)"
   ],
   "private": true,
-  "main": "docs/index.html",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/about.pug",
-    "build": "parcel build src/index.pug --public-url /lusuke-website/"
+    "dev": "parcel src/index.pug",
+    "build": "parcel build src/*.pug --public-url /lusuke-website/ --dist-dir docs"
   },
   "devDependencies": {
     "@parcel/transformer-pug": "^2.0.0-beta.2",
