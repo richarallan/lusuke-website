@@ -1,0 +1,103 @@
+extends templates/layout
+
+block main
+    section.main__page
+        h1.main__page--title As a Designer
+        p.main__page--desc. 
+        
+            #[strong Latin American self-taught multidisciplinary designer with more than 15 years on the road] 
+            – not an award-winner, no important talks, and coming from the countryside.
+        
+        a(href="#" class="main__goto")
+            .main__circle
+                .main__circle--right
+                .main__circle--left
+            
+            | Keep scrolling
+    
+    section.main__myself
+        .main__myself--photo
+            h1
+                img(src="assets/lucas-sukeyosi.jpg", alt="I'm Lucas Sukeyosi")
+
+        .main__myself--description
+            p.main--text. 
+                I believe that excellent design can transform anything in society. 
+                After all, enhancing an object to fulfill its purpose, through a 
+                tangible or abstract change, is the essence of design.
+
+            p.main--text. 
+                My professional career in design and digital marketing is heavily 
+                influenced by my education in economics. It gave me the foundation 
+                to empower a project to send the correct message, with the correct 
+                strategy, while accounting for current and future economic trends.
+            
+            p.main--text. 
+                In the last years (2016-2020) I was deep inside in the agribusiness 
+                sector – where we started an in-house agency covering everything from 
+                visual communication to all the marketing strategies.
+
+            p.main--text. 
+                #[strong Strong sense for Branding and UI.]
+    
+    .main__image--center
+        img(src="assets/keypin02.png", alt="Vision As an Economist")
+
+    section.main__page.main__page--botmargin
+        h1.main__page--title As an Economist
+        p.main__page--desc. 
+            #[strong macroeconomics and monetary economics - ] from Adam Smith to Mises, 
+            it was the beginning of my passion for the financial market and human behavior.
+        
+        .main__myself--economist
+            p.main--text. 
+                From 2011 to 2016, I entered the academy and participated in in-field research, 
+                congresses, seminars, and heated discussions - which is very common in an applied 
+                social science course.
+
+            p.main--text. 
+                Graduated from the Federal University of Mato Grosso, I found in Economic Sciences 
+                and in scientific methodology - critical analytical sense, skepticism, and curiosity 
+                for the unknown. 
+
+            p.main--text. 
+                #[strong In 2021 I m finishing my specialization in Finance, Investment, and Banking, rolling in the deep of behavioral economics and finance products.]
+
+        hr.main--line
+
+    .main__page.main__page--skills
+        - var dash = "– ";
+        section.main__page--expertise.column
+            h1.column--header – What are my expertise
+            .column__left
+                h2.column--title. 
+                    Design #[br] 
+                    and marketing
+                p.main--text. 
+                    Your visual identity is often the first point of contact of your 
+                    enterprise with your audience – it is the foundation, the support, 
+                    the base, and the root. What we are going to solve is exactly the 
+                    type of visual message that your market needs to receive. After 
+                    that, Houston, we need a plan: to make an assertive digital marketing 
+                    strategy to guide your public from assimilation to apologia of your brand, 
+                    product, or service, and that is somehow a small part of what Kotler (2017) 
+                    calls Marketing 4.0.
+                ul
+                    each val in ['Logotype', 'Visual Identity System', 'UX Copy / Tone of Voice', 'Brand Guidelines', 'User Interfaces', 'Digital Marketing Strategy']
+                        li= dash + val
+
+        section.main__page--sharping.column
+            h1.column--header – What am I sharping
+            .column__right
+                h2.column--title. 
+                 Finance, investments #[br]
+                 and banking
+                p.main--text. 
+                    What I'm studying at the moment:
+                
+                ul
+                    each val in ['Behavior Finance', 'Investiments: Asset allocation', 'Valuation and Investment Analysis', 'Treasury: Financial Mathematics', 'Financial Engineering: How to create investments, products and financial services', 'Wealth management, Family Office and Third Party Resource Management', 'International investments: Global and offshore portfolios', 'Investments: theory and ideas of capital', 'Financial products and services', 'Investment Bank']
+                        li= dash + val
+    
+    .main__download
+        a(href="#", class="main__button") Download my resume

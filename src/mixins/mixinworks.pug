@@ -1,0 +1,26 @@
+mixin work(client, roles, enterprise, text)
+    article.main__service.service
+        section.service__header
+            div.service__header--left
+                h1.main__service--title Client
+                h2.main--normal #{client}
+            div.service__header--right
+                h1.main__service--title My Roles
+                ul
+                    li.main--normal #{roles}
+                    li.main--normal B#{roles}
+                    li.main--normal #{roles}
+                    li.main--normal #{roles}
+        section.service__contents
+            h1.main--header #{enterprise}
+            p.main--text.
+                #{text}
+        section.main__view
+            figure
+                img(src="assets/work__borreli--01.png", alt="Borelli&Co" class="main__view--pic")
+
+mixin socialmedia(name, url, slug)
+    li 
+        a(href=`${url}` target="_blank")
+            i(class=`bi bi-${name}`)
+            span(class="footer__slug") #{slug}

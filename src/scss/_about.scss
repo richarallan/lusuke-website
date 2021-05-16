@@ -1,0 +1,84 @@
+.main {
+  &__myself {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 4.5vw 0 3.4vw;
+    margin: 0 auto;
+
+    &--photo {
+      width: 100%;
+      flex: 1;
+
+      > img {
+        width: 100%;
+      }
+    }
+
+    &--description {
+      width: 690px;
+      margin: 38.25rem 0 14rem 0;
+    }
+
+    &--economist {
+      width: 700px;
+      margin: 10rem auto;
+    }
+  }
+  &__image {
+    &--center {
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+  &__page {
+    &--botmargin {
+      margin: 17rem 0 10rem 0;
+    }
+
+    &--skills {
+      margin: 0 auto 15rem auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  &__download {
+    display: block;
+    margin: 0 auto 20rem auto;
+
+    > a {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+.column {
+  width: 100%;
+
+  &--header {
+    font-size: 0.75rem;
+  }
+
+  &__left,
+  &__right {
+    background-color: $black;
+    color: $beige;
+    padding: 6rem 9.8rem;
+    height: 800px;
+
+    & ul {
+      list-style: none;
+      padding: 0;
+      @include fluid-font(1.1rem, 1.5rem);
+    }
+  }
+
+  &--title {
+    font-family: "Syncopate", "Sans-serif";
+    @include fluid-font(1.5rem, 2rem);
+    text-transform: uppercase;
+    margin-bottom: 3.5rem;
+  }
+}

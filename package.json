@@ -7,10 +7,10 @@
     "Lucas Sukeyosi <lusuke@gmail.com> (http://lusuke.com.br)"
   ],
   "private": true,
-  "main": "docs/contact.html",
+  "main": "docs/about.html",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/contact.pug",
+    "dev": "parcel src/about.pug",
     "build": "parcel build src/index.pug --public-url /lusuke-website/"
   },
   "devDependencies": {
