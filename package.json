@@ -10,7 +10,7 @@
   "main": "docs/index.html",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/index.pug",
+    "dev": "parcel src/about.pug",
     "build": "parcel build src/index.pug --public-url /lusuke-website/"
   },
   "devDependencies": {

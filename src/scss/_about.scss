@@ -53,7 +53,55 @@
       margin: 0 auto;
     }
   }
+  @media screen and (max-width: 1024px) {
+    &__myself {
+      &--pic {
+        width: 100%;
+      }
+      &--description {
+        width: 50%;
+        margin: 36% 0 14rem 2.5rem;
+      }
+    }
+    &__page {
+      &--botmargin {
+        margin: 10rem 0;
+      }
+      &--skills {
+        display: block;
+        padding-top: 6rem;
+      }
+
+      &--sharping {
+        margin-top: 5rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__myself {
+      &--economist {
+        width: 100%;
+      }
+    }
+    &__page {
+      &--botmargin {
+        margin: 5rem 0 4rem 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 690px) {
+    &__myself {
+      display: block;
+      &--description {
+        width: 100%;
+        margin: 5rem 0 15rem 0;
+      }
+    }
+  }
 }
+
 .column {
   width: 100%;
 
@@ -80,5 +128,21 @@
     @include fluid-font(1.5rem, 2rem);
     text-transform: uppercase;
     margin-bottom: 3.5rem;
+  }
+
+  @media screen and (max-width: 690px) {
+    &__left,
+    &__right {
+      height: auto;
+      padding: 3rem 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    &__page {
+      &--botmargin {
+        padding-bottom: 0;
+      }
+    }
   }
 }

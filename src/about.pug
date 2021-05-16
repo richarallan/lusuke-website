@@ -18,7 +18,7 @@ block main
     section.main__myself
         .main__myself--photo
             h1
-                img(src="assets/lucas-sukeyosi.jpg", alt="I'm Lucas Sukeyosi")
+                img(src="assets/lucas-sukeyosi.jpg", alt="I'm Lucas Sukeyosi", class="main__myself--pic")
 
         .main__myself--description
             p.main--text. 
@@ -90,8 +90,8 @@ block main
             h1.column--header – What am I sharping
             .column__right
                 h2.column--title. 
-                 Finance, investments #[br]
-                 and banking
+                    Finance, investments #[br]
+                    and banking
                 p.main--text. 
                     What I'm studying at the moment:
                 
@@ -100,4 +100,4 @@ block main
                         li= dash + val
     
     .main__download
-        a(href="#", class="main__button") Download my resume
+        a(href="#", class="main__button main__button--scale") Download my resume
