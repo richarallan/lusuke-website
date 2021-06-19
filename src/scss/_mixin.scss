@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @mixin fluid-font(
   $min,
   $max,
@@ -38,7 +40,7 @@
 }
 
 @function strip-units($number) {
-  @return $number / ($number * 0 + 1);
+  @return math.div($number, $number * 0 + 1);
 }
 
 @function getUnit($value) {

@@ -20,5 +20,6 @@ footer.footer
         ul.footer__socialm
             each socialmedia in socialLinks
                 +socialmedia(socialmedia.name, socialmedia.url, socialmedia.slug)
-            //- each val, key in {'instagramLink': 'sukeyosi', 'linkdinLink': 'sukeyosi', 'twitter': 'lusuke'}
-            //-     li: a(href=`${key}` target="_blank"): i.bi.bi-twitter= val 
+script(src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js")
+script
+    include ../scripts/photoslide.js

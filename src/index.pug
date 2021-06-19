@@ -4,13 +4,13 @@ block main
     section.main__intro
         figure
             h1 
-                img(src="assets/lucas-presenting-your-skills.svg", alt="Lucas presenting your skills: beer crafter, coffee lover, garage musician, graduate economics finances and master digital marketing and design")
+                img(src="url:assets/lusuke-presentation.jpg?as=webp", alt="Lucas presenting your skills: beer crafter, coffee lover, garage musician, graduate economics finances and master digital marketing and design")
     
     section#about.main__about
         .main__avatar
             figure
                 h1
-                    img(src="assets/lucas-sukeyosi.jpg", alt="Hi, I'm Lucas Sukeyosi")
+                    img(src="url:assets/lucas-sukeyosi.jpg?as=webp", alt="Hi, I'm Lucas Sukeyosi")
         .main__me
             .main__me--grid
                 h1.main--header Olá
@@ -35,7 +35,7 @@ block main
                         honesty, and authenticity – producing
                         and serving humanity, always with a
                         purpose.
-                a(href="#" class="main__button") read more
+                a(href=about class="main__button") read more
     
     section#works.main__works
         figure
@@ -50,12 +50,14 @@ block main
                 while I’m working on the full case studies. Other than that, this 
                 portfolio would be far from being online. Not the ideal world, but 
                 don’t forget that I’m also an Economist.
-                
-        include templates/workcontent
+            
+        each work in workContent
+            +work(work.client, work.roles, work.roles1, work.roles2, work.roles3, work.roles4, work.roles5, work.enterprise, work.text, work.image1, work.image2, work.image3, work.image4, work.image5, work.alt1, work.alt2, work.alt3, work.alt4, work.alt5)
+        //- include templates/workcontent
 
         .main__works--page
-            img(src="assets/goto-portifolio.png", alt="Go to my portfolio")
-            p.main__service--title #[a(href="#") You can always #[span.main--green open the door of my portfolio] #[span.main__works--risk (read here a lot of snapshots and brief description)] to see a little more.]
+            img(src="url:assets/goto-portifolio.png?as=webp", alt="Go to my portfolio")
+            p.main__service--title #[a(href=works) You can always #[span.main--green open the door of my portfolio] #[span.main__works--risk (read here a lot of snapshots and brief description)] to see a little more.]
     
     section#blog.main__blog.blog
         h1.main--header blog
@@ -72,7 +74,7 @@ block main
                 not recommendations.
         article.blog__contents
             .blog__image
-                img(src="assets/bermix-studio-aX1hN4uNd-I-unsplash.jpg" alt="What the value of money?")
+                img(src="url:assets/bermix-studio-aX1hN4uNd-I-unsplash.jpg?as=webp" alt="What the value of money?")
             .blog__frame
                  ul.blog__frame--ul
                     li.blog__frame--li Economics

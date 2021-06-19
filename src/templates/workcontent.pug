@@ -6,10 +6,8 @@ div.main__service.service
         div.service__header--right
             h2.main__service--title My Roles
             ul
-                li.main--normal Concept
-                li.main--normal Branding Design
-                li.main--normal UX Copy
-                li.main--normal UX Design
+                each roles in myRoles
+                    +roles(roles.role)
     section.service__contents
         h2.main--header Borelli&Co.
         p.main--text.
@@ -19,8 +17,21 @@ div.main__service.service
             his own company to help small and medium businesses that are 
             struggling with financial and strategic decisions.
     div.main__view
-        figure
-            img(src="assets/work__borreli--01.png", alt="Borelli&Co" class="main__view--pic")
+        div.glider-contain
+            div.glider
+                div
+                    img(src="url:assets/work__borreli--01.png?as=webp", alt="Borelli&Co" class="main__view--pic")
+                div
+                    img(src="url:assets/work__borreli--01.png?as=webp", alt="Borelli&Co" class="main__view--pic")
+                div
+                    img(src="url:assets/work__borreli--01.png?as=webp", alt="Borelli&Co" class="main__view--pic")
+                div
+                    img(src="url:assets/work__borreli--01.png?as=webp", alt="Borelli&Co" class="main__view--pic")
+                div
+                    img(src="url:assets/work__borreli--01.png?as=webp", alt="Borelli&Co" class="main__view--pic")
+            button.glider-prev(aria-label="Previous") «
+            button.glider-next(aria-label="Next") »
+            div#dots
 div.main__service.service
     section.service__header
         div.service__header--left

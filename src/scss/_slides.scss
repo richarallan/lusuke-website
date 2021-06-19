@@ -1,0 +1,23 @@
+.main {
+    &__view {
+        width: 100%;
+    }
+    &__slider {
+        width: 80vw;
+        &--slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & img {
+                height: 90%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.glider-dot {
+    background: #DBDBDB !important;
+}
+.glider-dots > .active {
+    background: #717171 !important;
+}

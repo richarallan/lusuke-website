@@ -1,5 +1,5 @@
-mixin work(client, roles, enterprise, text)
-    article.main__service.service
+mixin work(client, roles, roles1, roles2, roles3, roles4, roles5, enterprise, text, image1, image2, image3, image4, image5, alt1, alt2, alt3, alt4, alt5)
+    div.main__service.service
         section.service__header
             div.service__header--left
                 h1.main__service--title Client
@@ -7,20 +7,27 @@ mixin work(client, roles, enterprise, text)
             div.service__header--right
                 h1.main__service--title My Roles
                 ul
-                    li.main--normal #{roles}
-                    li.main--normal B#{roles}
-                    li.main--normal #{roles}
-                    li.main--normal #{roles}
+                    li.main--normal.main--comma #{roles}
+                    li.main--normal #{roles1}
+                    li.main--normal #{roles2}
+                    li.main--normal #{roles3}
+                    li.main--normal #{roles4}
+                    li.main--normal #{roles5}
+                
         section.service__contents
             h1.main--header #{enterprise}
             p.main--text.
                 #{text}
         section.main__view
-            figure
-                img(src="assets/work__borreli--01.png", alt="Borelli&Co" class="main__view--pic")
-
-mixin socialmedia(name, url, slug)
-    li 
-        a(href=`${url}` target="_blank")
-            i(class=`bi bi-${name}`)
-            span(class="footer__slug") #{slug}
+            .main__slider
+                .main__slider--slide
+                    img(src=`url:assets/${image1}.jpg?as=webp`, alt=`${alt1}` class="main__view--pic")
+                .main__slider--slide
+                    img(src=`url:assets/${image2}.jpg?as=webp`, alt=`${alt2}` class="main__view--pic")
+                .main__slider--slide
+                    img(src=`url:assets/${image3}.jpg?as=webp`, alt=`${alt3}` class="main__view--pic")
+                .main__slider--slide
+                    img(src=`url:assets/${image4}.jpg?as=webp`, alt=`${alt4}` class="main__view--pic")
+                .main__slider--slide
+                    img(src=`url:assets/${image5}.jpg?as=webp`, alt=`${alt5}` class="main__view--pic")
+            .main__slider--simpledot(role="tablist")

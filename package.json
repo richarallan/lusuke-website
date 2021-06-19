@@ -1,27 +1,32 @@
 {
   "name": "lusuke-website",
-  "version": "0.0.1",
+  "version": "0.1.0a",
   "description": "Lucas Sukeyosi Website & blog",
   "author": "Richar Allan Macedo <richar.silvamacedo@gmail.com> (https://www.linkedin.com/in/richarallan)",
   "contributors": [
     "Lucas Sukeyosi <lusuke@gmail.com> (http://lusuke.com.br)"
   ],
   "private": true,
-  "main": "docs/index.html",
+  "targets": {
+    "main": false
+  },
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/about.pug",
-    "build": "parcel build src/index.pug --public-url /lusuke-website/"
+    "dev": "parcel src/index.pug src/about.pug src/work.pug src/contact.pug",
+    "build": "parcel build src/*.pug --public-url /lusuke-website/ --dist-dir docs"
   },
   "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-beta.2",
     "@parcel/transformer-pug": "^2.0.0-beta.2",
     "@parcel/transformer-sass": "^2.0.0-beta.2",
     "cssnano": "^5.0.2",
-    "parcel": "^2.0.0-beta.2",
+    "parcel": "2.0.0-beta.2",
     "postcss": "^8.2.1",
-    "sass": "^1.32.12"
+    "sass": "^1.32.12",
+    "sharp": "^0.28.3"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "normalize-scss": "^7.0.1",
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6"
