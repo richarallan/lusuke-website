@@ -1,5 +1,5 @@
 footer.footer 
-    .footer__items
+    .footer__items.footer__logo
         img(src="../src/assets/lusuke__logo--footer.png", alt="Lusuke Website")
         p.padding-48. 
             &copy; 2021 – Some rights reserved. Lucas Sukeyosi aka lusuke. 
@@ -12,7 +12,7 @@ footer.footer
     .footer__items
         h3.footer__items--text You scroll it All the way Through
         ul.footer__menu
-            each val, key in {'workLink': 'work', 'aboutLink': 'about', 'blogLink': 'Blog', 'ContactLink': 'Lets Talk', 'privacyLink': 'Privacy & Terms'}
+            each val, key in {'workLink': 'work', 'aboutLink': 'about', 'ContactLink': 'Lets Talk'}
                 li: a(href=`${ key }`)= val
     
     .footer__items
@@ -21,5 +21,6 @@ footer.footer
             each socialmedia in socialLinks
                 +socialmedia(socialmedia.name, socialmedia.url, socialmedia.slug)
 script(src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js")
+//- script(src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js") //without lazysizes
 script
     include ../scripts/photoslide.js

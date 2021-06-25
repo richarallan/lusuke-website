@@ -5,10 +5,11 @@
     flex-flow: row wrap;
     padding: 0 4.5vw 0 3.4vw;
     margin: 0 auto;
+    justify-content: center;
 
     &--photo {
-      width: 100%;
-      flex: 1;
+      width: fit-content;
+      padding-right: 16rem;
 
       > img {
         width: 100%;
@@ -33,7 +34,7 @@
   }
   &__page {
     &--botmargin {
-      margin: 17rem 0 10rem 0;
+      margin-bottom: 10rem; //changed -> margin: 17rem 0 10rem 0;
     }
 
     &--skills {
@@ -60,7 +61,8 @@
       }
       &--description {
         width: 50%;
-        margin: 36% 0 14rem 2.5rem;
+        max-width: 690px;
+        margin: 36% 0 14rem 2.5rem; //necessário alterar
       }
     }
     &__page {

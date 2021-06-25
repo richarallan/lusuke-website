@@ -4,13 +4,13 @@ block main
     section.main__intro
         figure
             h1 
-                img(src="url:assets/lusuke-presentation.jpg?as=webp", alt="Lucas presenting your skills: beer crafter, coffee lover, garage musician, graduate economics finances and master digital marketing and design")
+                img(src="url:assets/lusuke-presentation.jpg?as=webp&width=1903&height=1000", alt="Lucas presenting your skills: beer crafter, coffee lover, garage musician, graduate economics finances and master digital marketing and design" width="1903")
     
     section#about.main__about
         .main__avatar
             figure
                 h1
-                    img(src="url:assets/lucas-sukeyosi.jpg?as=webp", alt="Hi, I'm Lucas Sukeyosi")
+                    img(src="url:assets/lucas-sukeyosi.jpg?as=webp&width=720" class="lazyload" alt="Hi, here's a photo of Lucas Sukeyosi" width="720")
         .main__me
             .main__me--grid
                 h1.main--header Olá
@@ -39,7 +39,7 @@ block main
     
     section#works.main__works
         figure
-            img(src="assets/work-file.svg", alt="Latest Works")
+            img(src="url:assets/keypin02.png", class="lazyload" alt="Latest Works" width="100" height="113" class="main__works--figure")
         .main__works--grid
             h1.main--header work file
             p.main--text.
@@ -56,7 +56,7 @@ block main
         //- include templates/workcontent
 
         .main__works--page
-            img(src="url:assets/goto-portifolio.png?as=webp", alt="Go to my portfolio")
+            img(src="url:assets/goto-portifolio.png?as=webp&width=84&height=85", class="lazyload" alt="Go to my portfolio" width="84" height="85")
             p.main__service--title #[a(href=works) You can always #[span.main--green open the door of my portfolio] #[span.main__works--risk (read here a lot of snapshots and brief description)] to see a little more.]
     
     section#blog.main__blog.blog
@@ -74,7 +74,7 @@ block main
                 not recommendations.
         article.blog__contents
             .blog__image
-                img(src="url:assets/bermix-studio-aX1hN4uNd-I-unsplash.jpg?as=webp" alt="What the value of money?")
+                img(src="url:assets/bermix-studio-aX1hN4uNd-I-unsplash.jpg?as=webp&width=746", class="lazyload" alt="What the value of money?" width="746")
             .blog__frame
                  ul.blog__frame--ul
                     li.blog__frame--li Economics

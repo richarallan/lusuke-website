@@ -4,6 +4,8 @@
     }
     &__slider {
         width: 80vw;
+        height: auto;
+        max-height: 90vh;
         &--slide {
             display: flex;
             align-items: center;

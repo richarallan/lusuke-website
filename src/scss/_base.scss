@@ -32,8 +32,9 @@ a {
   &__page {
     box-sizing: border-box;
     display: block;
-    padding: 0 4.5vw 0 3.4vw;
-    margin: 17rem 0 20rem 0;
+    padding: 0 3.5rem; // -> old params padding: 0 4.5vw 0 3.4vw;
+    margin: 17rem auto;
+    max-width: 1855px;
   }
 
   &__goto {
