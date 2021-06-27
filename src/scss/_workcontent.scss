@@ -14,6 +14,10 @@
   }
   &__contents {
     width: 50vw;
+    &--text {
+      @include fluid-font(1.1rem, 1.5rem);
+      max-width: 48.8125rem;
+    }
   }
   & ul {
     list-style: none;
@@ -45,6 +49,12 @@
       box-sizing: border-box;
 
       > h1 {
+        text-align: center;
+      }
+      &--text {
+        margin: 1.5rem auto;
+      }
+      & ul {
         text-align: center;
       }
     }

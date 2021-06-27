@@ -53,7 +53,7 @@
     height: 100vh;
 
     & img {
-      width: 100%;
+      width: 100%; //Analysis
     }
 
     @media screen and (max-width: 1024px) {
@@ -142,12 +142,15 @@
       flex-flow: column wrap;
     }
     &__avatar {
-      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
     }
     &__me {
       padding: 3rem 3rem 3rem 1.75rem;
       text-align: left;
       height: 100%;
+      max-width: 550px;
+      margin: 0 auto;
     }
     &__button {
       display: block;
@@ -169,6 +172,7 @@
 
   &__avatar img {
     width: 100%;
+    max-width: 802px;
   }
   /* Service */
   &__works {

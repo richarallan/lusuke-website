@@ -2,7 +2,7 @@
   &__myself {
     box-sizing: border-box;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     padding: 0 4.5vw 0 3.4vw;
     margin: 0 auto;
     justify-content: center;
@@ -99,6 +99,19 @@
       &--description {
         width: 100%;
         margin: 5rem 0 15rem 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+    &__myself {
+      flex-flow: column nowrap;
+      &--photo {
+        padding: 0 0;
+        margin: 0 auto;
+      }
+      &--description {
+        margin: 5rem auto 14rem auto;
       }
     }
   }

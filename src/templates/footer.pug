@@ -10,13 +10,13 @@ footer.footer
         //- about__professional -> main--greenlink
     
     .footer__items
-        h3.footer__items--text You scroll it All the way Through
+        p.footer__items--text You scroll it All the way Through
         ul.footer__menu
-            each val, key in {'workLink': 'work', 'aboutLink': 'about', 'ContactLink': 'Lets Talk'}
+            each val, key in {'work.pug': 'work', 'about.pug': 'about', 'contact.pug': 'Lets Talk'}
                 li: a(href=`${ key }`)= val
     
-    .footer__items
-        h3.footer__items--text Let's drink a e-coffee
+    .footer__items.footer--align
+        p.footer__items--text Let's drink a e-coffee
         ul.footer__socialm
             each socialmedia in socialLinks
                 +socialmedia(socialmedia.name, socialmedia.url, socialmedia.slug)

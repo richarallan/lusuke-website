@@ -1,25 +1,31 @@
-mixin work(client, roles, roles1, roles2, roles3, roles4, roles5, enterprise, text, image1, image2, image3, image4, image5, alt1, alt2, alt3, alt4, alt5)
+mixin work(client, roles, roles1, roles2, roles3, roles4, roles5, enterprise, text, classuda, image1, image2, image3, image4, image5, alt1, alt2, alt3, alt4, alt5)
     div.main__service.service
-        section.service__header
+        div.service__header
             div.service__header--left
-                h1.main__service--title Client
-                h2.main--normal #{client}
+                p.main__service--title Client
+                p.main--normal #{client}
             div.service__header--right
-                h1.main__service--title My Roles
+                p.main__service--title My Roles
                 ul
-                    li.main--normal.main--comma #{roles}
-                    li.main--normal #{roles1}
-                    li.main--normal #{roles2}
-                    li.main--normal #{roles3}
-                    li.main--normal #{roles4}
-                    li.main--normal #{roles5}
+                    if !workContent.roles
+                        li.main--normal #{roles}
+                    if !workContent.roles1
+                        li.main--normal #{roles1}
+                    if !workContent.roles2
+                        li.main--normal #{roles2}
+                    if !workContent.roles3
+                        li.main--normal #{roles3}
+                    if !workContent.roles4
+                        li.main--normal #{roles4}
+                    if !workContent.roles5
+                        li.main--normal #{roles5}
                 
-        section.service__contents
-            h1.main--header #{enterprise}
-            p.main--text.
+        div.service__contents
+            p.main--header #{enterprise}
+            p.service__contents--text.
                 #{text}
-        section.main__view
-            .main__slider
+        div.main__view
+            div(class=`${classuda}`)
                 .main__slider--slide
                     img(src=`url:assets/${image1}.jpg?as=webp`, alt=`${alt1}` class="main__view--pic")
                 .main__slider--slide
