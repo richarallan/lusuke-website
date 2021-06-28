@@ -13,7 +13,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel src/index.pug src/about.pug src/work.pug src/contact.pug",
-    "build": "parcel build src/*.pug --public-url lusuke.com/ --dist-dir docs --no-content-hash"
+    "build": "parcel build src/*.pug --public-url /website-lusuke/ --dist-dir docs"
   },
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-beta.2",
