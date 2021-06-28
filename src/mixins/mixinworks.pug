@@ -7,17 +7,17 @@ mixin work(client, roles, roles1, roles2, roles3, roles4, roles5, enterprise, te
             div.service__header--right
                 p.main__service--title My Roles
                 ul
-                    if !workContent.roles
+                    if roles
                         li.main--normal #{roles}
-                    if !workContent.roles1
+                    if roles1
                         li.main--normal #{roles1}
-                    if !workContent.roles2
+                    if roles2
                         li.main--normal #{roles2}
-                    if !workContent.roles3
+                    if roles3
                         li.main--normal #{roles3}
-                    if !workContent.roles4
+                    if roles4
                         li.main--normal #{roles4}
-                    if !workContent.roles5
+                    if roles5
                         li.main--normal #{roles5}
                 
         div.service__contents
@@ -25,15 +25,15 @@ mixin work(client, roles, roles1, roles2, roles3, roles4, roles5, enterprise, te
             p.service__contents--text.
                 #{text}
         div.main__view
-            div(class=`${classuda}`)
+            div(id="slider", class=`${classuda}`)
                 .main__slider--slide
-                    img(src=`url:assets/${image1}.jpg?as=webp`, alt=`${alt1}` class="main__view--pic")
+                    img(src=`url:assets/${image1}.jpg?as=webp`, alt=`${alt1}` class="selected")
                 .main__slider--slide
-                    img(src=`url:assets/${image2}.jpg?as=webp`, alt=`${alt2}` class="main__view--pic")
+                    img(src=`url:assets/${image2}.jpg?as=webp`, alt=`${alt2}` class="")
                 .main__slider--slide
-                    img(src=`url:assets/${image3}.jpg?as=webp`, alt=`${alt3}` class="main__view--pic")
+                    img(src=`url:assets/${image3}.jpg?as=webp`, alt=`${alt3}` class="")
                 .main__slider--slide
-                    img(src=`url:assets/${image4}.jpg?as=webp`, alt=`${alt4}` class="main__view--pic")
+                    img(src=`url:assets/${image4}.jpg?as=webp`, alt=`${alt4}` class="")
                 .main__slider--slide
-                    img(src=`url:assets/${image5}.jpg?as=webp`, alt=`${alt5}` class="main__view--pic")
+                    img(src=`url:assets/${image5}.jpg?as=webp`, alt=`${alt5}` class="")
             .main__slider--simpledot(role="tablist")

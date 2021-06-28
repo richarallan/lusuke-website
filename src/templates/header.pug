@@ -7,5 +7,5 @@ label(for="menu__mob") &#9776;
 input(type="checkbox", name="menu__mob", id="menu__mob", class="menu--mobile")
 nav.menu--nav
     ul.menu__navigation
-        each val, key in {'work.pug': 'work', 'about.pug': 'about', 'contact.pug': 'open to work'}
+        each val, key in {'work.pug': 'work', 'about.pug': 'about', 'contact.pug': 'say hello'}
             li.menu__item: a.menu__link(href=`${ key }`)= val
