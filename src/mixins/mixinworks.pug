@@ -1,4 +1,4 @@
-mixin work(client, roles, roles1, roles2, roles3, roles4, roles5, enterprise, text, classuda, image1, image2, image3, image4, image5, alt1, alt2, alt3, alt4, alt5)
+mixin work(client, roles, roles1, roles2, roles3, roles4, roles5, enterprise, text, classSlide, navDot, indexDot, image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, alt1, alt2, alt3, alt4, alt5, alt6, alt7, alt8, alt9, alt10)
     div.main__service.service
         div.service__header
             div.service__header--left
@@ -24,16 +24,56 @@ mixin work(client, roles, roles1, roles2, roles3, roles4, roles5, enterprise, te
             p.main--header #{enterprise}
             p.service__contents--text.
                 #{text}
-        div.main__view
-            div(id="slider", class=`${classuda}`)
-                .main__slider--slide
-                    img(src=`url:assets/${image1}.jpg?as=webp`, alt=`${alt1}` class="selected")
-                .main__slider--slide
-                    img(src=`url:assets/${image2}.jpg?as=webp`, alt=`${alt2}` class="")
-                .main__slider--slide
-                    img(src=`url:assets/${image3}.jpg?as=webp`, alt=`${alt3}` class="")
-                .main__slider--slide
-                    img(src=`url:assets/${image4}.jpg?as=webp`, alt=`${alt4}` class="")
-                .main__slider--slide
-                    img(src=`url:assets/${image5}.jpg?as=webp`, alt=`${alt5}` class="")
-            .main__slider--simpledot(role="tablist")
+        div.main__view <!-- slideshow-container -->
+            if image1
+                div(class=`${classSlide} fade`).main__view--slide <!-- mySlides1 fade -->
+                    img(src=`url:assets/${image1}.jpg?as=webp&width=1350`, alt=`${alt1}`, width="1350")
+            if image2
+                div(class=`${classSlide} fade`).main__view--slide
+                    img(src=`url:assets/${image2}.jpg?as=webp&width=1350`, alt=`${alt2}`, width="1350")
+            if image3
+                div(class=`${classSlide} fade`).main__view--slide
+                    img(src=`url:assets/${image3}.jpg?as=webp&width=1350`, alt=`${alt3}`, width="1350")
+            if image4
+                div(class=`${classSlide} fade`).main__view--slide
+                    img(src=`url:assets/${image4}.jpg?as=webp&width=1350`, alt=`${alt4}`, width="1350")
+            if image5
+                div(class=`${classSlide} fade`).main__view--slide
+                    img(src=`url:assets/${image5}.jpg?as=webp&width=1350`, alt=`${alt5}`, width="1350")
+            if image6
+                div(class=`${classSlide} fade`).main__view--slide
+                    img(src=`url:assets/${image6}.jpg?as=webp&width=1350`, alt=`${alt6}`, width="1350")
+            if image7
+                div(class=`${classSlide} fade`).main__view--slide
+                    img(src=`url:assets/${image7}.jpg?as=webp&width=1350`, alt=`${alt7}`, width="1350")
+            if image8
+                div(class=`${classSlide} fade`).main__view--slide
+                    img(src=`url:assets/${image8}.jpg?as=webp&width=1350`, alt=`${alt8}`, width="1350")
+            if image9
+                div(class=`${classSlide} fade`).main__view--slide
+                    img(src=`url:assets/${image9}.jpg?as=webp&width=1350`, alt=`${alt9}`, width="1350")
+            if image10
+                div(class=`${classSlide} fade`).main__view--slide
+                    img(src=`url:assets/${image10}.jpg?as=webp&width=1350`, alt=`${alt10}`, width="1350")
+        
+        .main__slider--simpledot
+            if image1
+                span(class=`${ navDot } dot`, onclick=`currentSlide(1, ${ indexDot } )`)
+            if image2
+                span(class=`${ navDot } dot`, onclick=`currentSlide(2, ${ indexDot } )`)
+            if image3
+                span(class=`${ navDot } dot`, onclick=`currentSlide(3, ${ indexDot })`)
+            if image4
+                span(class=`${ navDot } dot`, onclick=`currentSlide(4, ${ indexDot })`)
+            if image5
+                span(class=`${ navDot } dot`, onclick=`currentSlide(5, ${ indexDot })`)
+            if image6
+                span(class=`${ navDot } dot`, onclick=`currentSlide(6, ${ indexDot })`)
+            if image7
+                span(class=`${ navDot } dot`, onclick=`currentSlide(7, ${ indexDot })`)
+            if image8
+                span(class=`${ navDot } dot`, onclick=`currentSlide(8, ${ indexDot })`)
+            if image9
+                span(class=`${ navDot } dot`, onclick=`currentSlide(9, ${ indexDot })`)
+            if image10
+                span(class=`${ navDot } dot`, onclick=`currentSlide(10, ${ indexDot })`)
