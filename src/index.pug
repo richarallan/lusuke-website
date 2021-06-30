@@ -2,15 +2,17 @@ extends templates/layout
 
 block main
     section.main__intro
-        figure
-            h1 
-                img(src="url:assets/lusuke-presentation.jpg?as=webp&width=1903&height=1000", alt="Lucas presenting your skills: beer crafter, coffee lover, garage musician, graduate economics finances and master digital marketing and design" width="1903")
+        picture
+            source(sizes="(max-width:375px) 375px, (min-width:376px) and (max-width:540px) 540px, (min-width:541px) and (max-width:768px) 768px, (min-width:769px) and (max-width:1920px) 1903px, 2560px", srcset="url:assets/lusuke-presentation-375x425.jpg?as=webp 375w, url:assets/lusuke-presentation-540x612.jpg?as=webp 540w, url:assets/lusuke-presentation-768x432.jpg?as=webp 768w, url:assets/lusuke-presentation-1903x1070.jpg?as=webp 1903w, url:assets/lusuke-presentation-2560x1440.jpg?as=webp 2560w", type="image/webp")
+            source(srcset="assets/lusuke-presentation-375x425.jpg 375w, assets/lusuke-presentation-540x612.jpg 540w, assets/lusuke-presentation-768x432.jpg 768w, assets/lusuke-presentation-1903x1070.jpg 1903w, assets/lusuke-presentation-2560x1440.jpg 2560w", type="image/jpg")
+            img(sizes="(max-width:375px) 375px, (min-width:376px) and (max-width:540px) 540px, (min-width:541px) and (max-width:768px) 768px, (min-width:769px) and (max-width:1920px) 1903px, 2560px", src="assets/1x1.gif", decoding="async", role="presentation", alt="Lucas presenting your skills: beer crafter, coffee lover, garage musician, graduate economics finances and master digital marketing and design")
     
     section#about.main__about
         .main__avatar
-            figure
-                h1
-                    img(src="url:assets/lucas-sukeyosi.jpg?as=webp&width=720" class="lazyload" alt="Hi, here's a photo of Lucas Sukeyosi" width="720")
+            picture
+                source(sizes="(max-width:540px) 375px, (min-width:541px) and (max-width:768px) 540px, 802px", srcset="url:assets/lucas-sukeyosi-375x415.jpg?as=webp 375w, url:assets/lucas-sukeyosi-540x597.jpg?as=webp 540w, url:assets/lucas-sukeyosi-802x887.jpg?as=webp 802w", type="image/webp")
+                source(srcset="assets/lucas-sukeyosi-375x415.jpg 375w, assets/lucas-sukeyosi-540x597.jpg 540w, assets/lucas-sukeyosi-802x887.jpg 802w", type="image/jpg")
+                img(sizes="(max-width:540px) 375px, (min-width:541px) and (max-width:768px) 540px, 802px", src="assets/1x1.gif", decoding="async", role="presentation", class="lazyload" alt="Hi, here's a photo of Lucas Sukeyosi")
         .main__me
             .main__me--grid
                 h1.main--header Olá
@@ -23,7 +25,7 @@ block main
                 p.main--normal. 
                     A Latin American self-taught multidisciplinary designer,
                     with a degree in economics.
-                //- esse main normal, talvez possar ser o padrão do body
+                    
                 p.main--text You can say I’m a #[span.main--green multidisciplinary Designer or an Economist specializing in finance, investment, and banking].
                     br
                     br
@@ -35,11 +37,11 @@ block main
                         honesty, and authenticity – producing
                         and serving humanity, always with a
                         purpose.
-                a(href=about class="main__button") read more
+                a(href=about class="main__button") check my bio
     
     section#works.main__works
         figure
-            img(src="url:assets/keypin02.png", class="lazyload" alt="Latest Works" width="100" height="113" class="main__works--figure")
+            img(src="url:assets/keypin02.png?as=webp", class="lazyload" alt="Latest Works" width="100" height="113" class="main__works--figure")
         .main__works--grid
             h1.main--header work file
             p.main--text.

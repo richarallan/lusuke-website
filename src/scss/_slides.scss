@@ -5,7 +5,7 @@
         padding: 1.5rem;
         box-sizing: border-box;
         position: relative;
-        margin: auto;
+        margin: 2.5rem auto 0 auto;
         &--slide {
             max-width: 1400px;
             width: 100%;
@@ -16,13 +16,17 @@
                 vertical-align: middle;
             }
         }
+        &--dot {
+            margin: 1.5rem auto;
+            width: fit-content;
+        }
     }
 }
 .dot {
     cursor: pointer;
     height: 1.5rem; // SEO 48px
     width: 1.5rem; // SEO 48px
-    padding: 0.75rem 0.75rem; //necessário 48px para max SEO
+    // padding: 0.75rem 0.75rem; //necessário 48px para max SEO
     background-color: #DBDBDB;
     border-radius: 50%;
     display: inline-block;

@@ -49,11 +49,11 @@
     align-items: center;
     padding-top: 90px;
     margin: 0 auto;
-    width: auto;
-    height: 100vh;
+    max-width: 100%;
 
     & img {
       width: 100%; //Analysis
+      max-width: 100%;
     }
 
     @media screen and (max-width: 1024px) {
@@ -134,6 +134,11 @@
         color: #efefe6;
         border: 0.5rem solid rgba(239, 239, 230, 1);
       }
+    }
+  }
+  @media screen and (max-width:1330px) {
+    &__intro {
+      height: 100vh;
     }
   }
   @media screen and (max-width: 1255px) {
