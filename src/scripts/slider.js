@@ -1,30 +1,29 @@
-var slideIndex = [1, 1];
-var slideId = ["slider1", "slider2"];
-var dotsId = ["dots1", "dots2"];
-showSlides(1, 0);
-showSlides(1, 1);
-// showSlides(1, 2);
+var docStyle = document.documentElement.style;
+var transformProp = typeof docStyle.transform == 'string' ? 'transform' : 'WebkitTransform';
 
-function plusSlides(n, no) {
-    showSlides(slideIndex[no] += n, no);
+var carouselContainers = document.querySelectorAll('.carousel__container');
+
+for (var i = 0; i < carouselContainers.length; i++) {
+    var container = carouselContainers[i];
+    initCarouselContainer(container);
 }
 
-function currentSlide(n, no) {
-    showSlides(slideIndex[no] = n, no);
-}
+function initCarouselContainer(container) {
+    var options = {
+        prevNextButtons: false,
+        imagesLoaded: true,
+        percentPosition: false
+    }
+    var carousel = container.querySelector('.carousel');
+    var flkty = new Flickity(carousel, options);
+    var imgs = carousel.querySelectorAll('.carousel-cell img');
 
-function showSlides(n, no) {
-    var i;
-    var slides = document.getElementsByClassName(slideId[no]);
-    var dots = document.getElementsByClassName(dotsId[no]);
-    if (n > slides.length) { slideIndex[no] = 1 }
-    if (n < 1) { slideIndex[no] = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex[no] - 1].style.display = "block";
-    dots[slideIndex[no] - 1].className += " active";
+    flkty.on('scroll', function () {
+        flkty.slides.forEach(function (slide, i) {
+            var img = imgs[i];
+            var x = (slide.target + flkty.x) * -1 / 3;
+            img.style[transformProp] = 'translateX(' + x + 'px)';
+        })
+    });
+
 }

@@ -8,12 +8,14 @@
   margin: 0 auto;
 
   &__header {
-    width: 10vw;
+    width: 100%;
+    max-width: 192px;
     text-transform: capitalize;
     margin-right: 11.25rem;
   }
   &__contents {
-    width: 50vw;
+    width: 100%;
+    max-width: 960px;
     &--text {
       @include fluid-font(1.1rem, 1.5rem);
       max-width: 48.8125rem;
@@ -34,12 +36,14 @@
 
     &__header {
       padding: 0 3vw 1vh 3vw; /* 12vh = 1vh*/
-      // width: 90vw;
+      max-width: 350px;
       width: 90%;
       display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      margin: 0;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      margin: 0 auto;
+      order: 1;
+      text-align: center;
     }
 
     &__contents {

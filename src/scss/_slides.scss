@@ -1,63 +1,121 @@
-.main {
-    &__view {
-        width: 100%;
-        max-width: 1400px;
-        padding: 1.5rem;
-        box-sizing: border-box;
-        position: relative;
-        margin: 2.5rem auto 0 auto;
-        &--slide {
-            max-width: 1400px;
-            width: 100%;
-            display: none;
-            & img {
-                width: 100%;
-                max-width: 1350px;
-                vertical-align: middle;
-            }
-        }
-        &--dot {
-            margin: 1.5rem auto;
-            width: fit-content;
-        }
+.carousel {
+    background: $white;
+    &-cell {
+        width: 66%;
+        height: 200px;
+        margin-right: 10px;
+        background: #8c8;
+        counter-increment: carousel-cell;
+    }
+    &-cell::before {
+        display: block;
+        text-align: center;
+        content: counter(carousel-cell);
+        line-height: 200px;
+        font-size: 80px;
+        color: $white;
     }
 }
-.dot {
-    cursor: pointer;
-    height: 1.5rem; // SEO 48px
-    width: 1.5rem; // SEO 48px
-    // padding: 0.75rem 0.75rem; //necessário 48px para max SEO
-    background-color: #DBDBDB;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    margin: 0 0.5rem;
-    &:hover {
-        background-color: #717171;
-    }
-}
-.active {
-    background-color: #717171;
-}
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
+
+
+// .main {
+//     &__view {
+//         width: 100%;
+//         max-width: 1350px;
+//         // padding: 1.5rem;
+//         box-sizing: border-box;
+//         position: relative;
+//         margin: 2.5rem auto 0 auto;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         &--slide {
+//             max-width: 1400px;
+//             width: 100%;
+//             display: none;
+//             & img {
+//                 width: 100%;
+//                 max-width: 1350px;
+//                 vertical-align: middle;
+//             }
+//         }
+//         &--dot {
+//             margin: 1.5rem auto;
+//             width: fit-content;
+//             display: none;
+//         }
+//         &--prev,
+//         &--next {
+//             cursor: pointer;
+//             position: absolute;
+//             // bottom: 50%;
+//             width: auto;
+//             color: $black;
+//             font-weight: bold;
+//             font-size: 2rem;
+//             transition: 0.6s ease-in-out;
+//             border-radius: 0 3px 3px 0;
+//             user-select: none;
+//             padding: 1.5rem 2rem;
+//         }
+//         &--prev {
+//             left: 0;
+//         }
+//         &--next {
+//             right: 0; //right: 1.55rem
+//             border-radius: 3px 0 0 3px;
+//         }
+//         &--prev:hover,
+//         &--next:hover {
+//             background-color: rgba(117, 185, 165, 0.8);
+//         }
+//     }
+//     @media screen and (max-width: 1255px) {
+//         &__view {
+//             &--prev, &--next {
+//                 padding: 0.3rem 0.8rem;
+//                 font-size: 1.3rem;
+          
+//             }
+//         }
+//     }
+// }
+// .dot {
+//     cursor: pointer;
+//     height: 1.5rem; // SEO 48px
+//     width: 1.5rem; // SEO 48px
+//     // padding: 0.75rem 0.75rem; //necessário 48px para max SEO
+//     background-color: #DBDBDB;
+//     border-radius: 50%;
+//     display: inline-block;
+//     transition: background-color 0.6s ease;
+//     margin: 0 0.5rem;
+//     &:hover {
+//         background-color: #717171;
+//     }
+// }
+// .active {
+//     background-color: #717171;
+// }
+// .fade {
+//     -webkit-animation-name: fade;
+//     -webkit-animation-duration: 1.5s;
+//     animation-name: fade;
+//     animation-duration: 1.5s;
+// }
+// @-webkit-keyframes fade {
+//     from {
+//         opacity: .4
+//     }
+//     to {
+//         opacity: 1
+//     }
+// }
+// @keyframes fade {
+//     from {
+//         opacity: .4
+//     }
+//     to {
+//         opacity: 1
+//     }
+// }

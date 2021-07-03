@@ -8,22 +8,22 @@ block main
             #[strong I’d love to hear from you,] feel free #[span(class="main--green") to send me an email]
             for more information, trade some ideas, or just talk about life.
         
-        a(href="#" class="main__goto")
-            .main__circle
-                .main__circle--right
-                .main__circle--left
+        //- a(href="#" class="main__goto")
+        //-     .main__circle
+        //-         .main__circle--right
+        //-         .main__circle--left
             
-            | Keep scrolling
+        //-     | Keep scrolling
     
     section.main__form
         form(action="", method="post", class="main__form--contact")
             .main__form--grid
                 label(for="firstname", class="main__form--label") First name
-                input(type="text", name="first name", id="firstname", class="main__form--input" required placeholder="Enter your first name please")
+                input(type="text", name="firstname", id="firstname", class="main__form--input" required placeholder="Enter your first name please")
             
             .main__form--grid
                 label(for="lastname", class="main__form--label") Last Name
-                input(type="text", name="last name", id="lastname", class="main__form--input" required placeholder="What is your surname?")
+                input(type="text", name="lastname", id="lastname", class="main__form--input" required placeholder="What is your surname?")
             
             .main__form--grid
                 label(for="email", class="main__form--label") Email
@@ -38,5 +38,5 @@ block main
                 textarea(name="message", id="message", cols="30", rows="10", class="main__form--textarea" required placeholder="Say hello! Enter your message")
             div
 
-            button(type="submit", class="main__form--submit") Send
+            button(type="submit", name="submit" class="main__form--submit") Send
                 i(class="main__form--icon bi bi-arrow-right")

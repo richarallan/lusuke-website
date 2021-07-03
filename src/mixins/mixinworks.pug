@@ -24,86 +24,25 @@ mixin work(client, roles, roles1, roles2, roles3, roles4, roles5, enterprise, te
             p.main--header.service__contents--header #{enterprise}
             p.service__contents--text.
                 #{text}
-        div.main__view <!-- slideshow-container -->
-            if image1
-                div(class=`${classSlide} fade`).main__view--slide <!-- mySlides1 fade -->
-                    picture
-                        source(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", srcset=`url:assets/${ image1 }-327x184.jpg?as=webp 327w, url:assets/${ image1 }-492x277.jpg?as=webp 492w, url:assets/${ image1 }-720x405.jpg?as=webp 720w, url:assets/${ image1 }-976x549.jpg?as=webp 976w, url:assets/${ image1 }-1350x759.jpg?as=webp 1350w`, type="image/webp")
-                        source(srcset=`assets/${ image1 }-327x184.jpg 327w, assets/${ image1 }-492x277.jpg 492w, assets/${ image1 }-720x405.jpg 720w, assets/${ image1 }-976x549.jpg 976w, assets/${ image1 }-1350x759.jpg 1350w`, type="image/jpg")
-                        img(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt1 }`)
-            if image2
-                div(class=`${classSlide} fade`).main__view--slide
-                    picture
-                        source(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", srcset=`url:assets/${ image2 }-327x184.jpg?as=webp 327w, url:assets/${ image2 }-492x277.jpg?as=webp 492w, url:assets/${ image2 }-720x405.jpg?as=webp 720w, url:assets/${ image2 }-976x549.jpg?as=webp 976w, url:assets/${ image2 }-1350x759.jpg?as=webp 1350w`, type="image/webp")
-                        source(srcset=`assets/${ image2 }-327x184.jpg 327w, assets/${ image2 }-492x277.jpg 492w, assets/${ image2 }-720x405.jpg 720w, assets/${ image2 }-976x549.jpg 976w, assets/${ image2 }-1350x759.jpg 1350w`, type="image/jpg")
-                        img(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt2 }`)
-            if image3
-                div(class=`${classSlide} fade`).main__view--slide
-                    picture
-                        source(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", srcset=`url:assets/${ image3 }-327x184.jpg?as=webp 327w, url:assets/${ image3 }-492x277.jpg?as=webp 492w, url:assets/${ image3 }-720x405.jpg?as=webp 720w, url:assets/${ image3 }-976x549.jpg?as=webp 976w, url:assets/${ image3 }-1350x759.jpg?as=webp 1350w`, type="image/webp")
-                        source(srcset=`assets/${ image3 }-327x184.jpg 327w, assets/${ image3 }-492x277.jpg 492w, assets/${ image3 }-720x405.jpg 720w, assets/${ image3 }-976x549.jpg 976w, assets/${ image3 }-1350x759.jpg 1350w`, type="image/jpg")
-                        img(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt3 }`)
-            if image4
-                div(class=`${classSlide} fade`).main__view--slide
-                    picture
-                        source(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", srcset=`url:assets/${ image4 }-327x184.jpg?as=webp 327w, url:assets/${ image4 }-492x277.jpg?as=webp 492w, url:assets/${ image4 }-720x405.jpg?as=webp 720w, url:assets/${ image4 }-976x549.jpg?as=webp 976w, url:assets/${ image4 }-1350x759.jpg?as=webp 1350w`, type="image/webp")
-                        source(srcset=`assets/${ image4 }-327x184.jpg 327w, assets/${ image4 }-492x277.jpg 492w, assets/${ image4 }-720x405.jpg 720w, assets/${ image4 }-976x549.jpg 976w, assets/${ image4 }-1350x759.jpg 1350w`, type="image/jpg")
-                        img(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt4 }`)
-            if image5
-                div(class=`${classSlide} fade`).main__view--slide
-                    picture
-                        source(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", srcset=`url:assets/${ image5 }-327x184.jpg?as=webp 327w, url:assets/${ image5 }-492x277.jpg?as=webp 492w, url:assets/${ image5 }-720x405.jpg?as=webp 720w, url:assets/${ image5 }-976x549.jpg?as=webp 976w, url:assets/${ image5 }-1350x759.jpg?as=webp 1350w`, type="image/webp")
-                        source(srcset=`assets/${ image5 }-327x184.jpg 327w, assets/${ image5 }-492x277.jpg 492w, assets/${ image5 }-720x405.jpg 720w, assets/${ image5 }-976x549.jpg 976w, assets/${ image5 }-1350x759.jpg 1350w`, type="image/jpg")
-                        img(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt5 }`)
-            if image6
-                div(class=`${classSlide} fade`).main__view--slide
-                    picture
-                        source(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", srcset=`url:assets/${ image6 }-327x184.jpg?as=webp 327w, url:assets/${ image6 }-492x277.jpg?as=webp 492w, url:assets/${ image6 }-720x405.jpg?as=webp 720w, url:assets/${ image6 }-976x549.jpg?as=webp 976w, url:assets/${ image6 }-1350x759.jpg?as=webp 1350w`, type="image/webp")
-                        source(srcset=`assets/${ image6 }-327x184.jpg 327w, assets/${ image6 }-492x277.jpg 492w, assets/${ image6 }-720x405.jpg 720w, assets/${ image6 }-976x549.jpg 976w, assets/${ image6 }-1350x759.jpg 1350w`, type="image/jpg")
-                        img(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt6 }`)
-            if image7
-                div(class=`${classSlide} fade`).main__view--slide
-                    picture
-                        source(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", srcset=`url:assets/${ image7 }-327x184.jpg?as=webp 327w, url:assets/${ image7 }-492x277.jpg?as=webp 492w, url:assets/${ image7 }-720x405.jpg?as=webp 720w, url:assets/${ image7 }-976x549.jpg?as=webp 976w, url:assets/${ image7 }-1350x759.jpg?as=webp 1350w`, type="image/webp")
-                        source(srcset=`assets/${ image7 }-327x184.jpg 327w, assets/${ image7 }-492x277.jpg 492w, assets/${ image7 }-720x405.jpg 720w, assets/${ image7 }-976x549.jpg 976w, assets/${ image7 }-1350x759.jpg 1350w`, type="image/jpg")
-                        img(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt7 }`)
-            if image8
-                div(class=`${classSlide} fade`).main__view--slide
-                    picture
-                        source(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", srcset=`url:assets/${ image8 }-327x184.jpg?as=webp 327w, url:assets/${ image8 }-492x277.jpg?as=webp 492w, url:assets/${ image8 }-720x405.jpg?as=webp 720w, url:assets/${ image8 }-976x549.jpg?as=webp 976w, url:assets/${ image8 }-1350x759.jpg?as=webp 1350w`, type="image/webp")
-                        source(srcset=`assets/${ image8 }-327x184.jpg 327w, assets/${ image8 }-492x277.jpg 492w, assets/${ image8 }-720x405.jpg 720w, assets/${ image8 }-976x549.jpg 976w, assets/${ image8 }-1350x759.jpg 1350w`, type="image/jpg")
-                        img(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt8 }`)
-            if image9
-                div(class=`${classSlide} fade`).main__view--slide
-                    picture
-                        source(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", srcset=`url:assets/${ image9 }-327x184.jpg?as=webp 327w, url:assets/${ image9 }-492x277.jpg?as=webp 492w, url:assets/${ image9 }-720x405.jpg?as=webp 720w, url:assets/${ image9 }-976x549.jpg?as=webp 976w, url:assets/${ image9 }-1350x759.jpg?as=webp 1350w`, type="image/webp")
-                        source(srcset=`assets/${ image9 }-327x184.jpg 327w, assets/${ image9 }-492x277.jpg 492w, assets/${ image9 }-720x405.jpg 720w, assets/${ image9 }-976x549.jpg 976w, assets/${ image9 }-1350x759.jpg 1350w`, type="image/jpg")
-                        img(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt9 }`)
-            if image10
-                div(class=`${classSlide} fade`).main__view--slide
-                    picture
-                        source(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", srcset=`url:assets/${ image10 }-327x184.jpg?as=webp 327w, url:assets/${ image10 }-492x277.jpg?as=webp 492w, url:assets/${ image10 }-720x405.jpg?as=webp 720w, url:assets/${ image10 }-976x549.jpg?as=webp 976w, url:assets/${ image10 }-1350x759.jpg?as=webp 1350w`, type="image/webp")
-                        source(srcset=`assets/${ image10 }-327x184.jpg 327w, assets/${ image10 }-492x277.jpg 492w, assets/${ image10 }-720x405.jpg 720w, assets/${ image10 }-976x549.jpg 976w, assets/${ image10 }-1350x759.jpg 1350w`, type="image/jpg")
-                        img(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt10 }`)
-        
-            .main__view--dot
+        div.carousel__container <!-- .main__view -->
+            div.carousel
                 if image1
-                    span(class=`${ navDot } dot`, onclick=`currentSlide(1, ${ indexDot } )`)
+                    div.carousel-cell
+                        //- picture
+                        //-     source(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", srcset=`url:assets/${ image1 }-327x184.jpg?as=webp 327w, url:assets/${ image1 }-492x277.jpg?as=webp 492w, url:assets/${ image1 }-720x405.jpg?as=webp 720w, url:assets/${ image1 }-976x549.jpg?as=webp 976w, url:assets/${ image1 }-1350x759.jpg?as=webp 1350w`, type="image/webp")
+                        //-     source(srcset=`assets/${ image1 }-327x184.jpg 327w, assets/${ image1 }-492x277.jpg 492w, assets/${ image1 }-720x405.jpg 720w, assets/${ image1 }-976x549.jpg 976w, assets/${ image1 }-1350x759.jpg 1350w`, type="image/jpg")
+                            img(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt1 }`)
                 if image2
-                    span(class=`${ navDot } dot`, onclick=`currentSlide(2, ${ indexDot } )`)
+                    div.carousel-cell
+                        //- picture
+                        //-     source(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", srcset=`url:assets/${ image2 }-327x184.jpg?as=webp 327w, url:assets/${ image2 }-492x277.jpg?as=webp 492w, url:assets/${ image2 }-720x405.jpg?as=webp 720w, url:assets/${ image2 }-976x549.jpg?as=webp 976w, url:assets/${ image2 }-1350x759.jpg?as=webp 1350w`, type="image/webp")
+                        //-     source(srcset=`assets/${ image2 }-327x184.jpg 327w, assets/${ image2 }-492x277.jpg 492w, assets/${ image2 }-720x405.jpg 720w, assets/${ image2 }-976x549.jpg 976w, assets/${ image2 }-1350x759.jpg 1350w`, type="image/jpg")
+                        //-     img(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt2 }`)
                 if image3
-                    span(class=`${ navDot } dot`, onclick=`currentSlide(3, ${ indexDot })`)
-                if image4
-                    span(class=`${ navDot } dot`, onclick=`currentSlide(4, ${ indexDot })`)
-                if image5
-                    span(class=`${ navDot } dot`, onclick=`currentSlide(5, ${ indexDot })`)
-                if image6
-                    span(class=`${ navDot } dot`, onclick=`currentSlide(6, ${ indexDot })`)
-                if image7
-                    span(class=`${ navDot } dot`, onclick=`currentSlide(7, ${ indexDot })`)
-                if image8
-                    span(class=`${ navDot } dot`, onclick=`currentSlide(8, ${ indexDot })`)
-                if image9
-                    span(class=`${ navDot } dot`, onclick=`currentSlide(9, ${ indexDot })`)
-                if image10
-                    span(class=`${ navDot } dot`, onclick=`currentSlide(10, ${ indexDot })`)
+                    div.carousel-cell
+                        //- picture
+                        //-     source(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", srcset=`url:assets/${ image3 }-327x184.jpg?as=webp 327w, url:assets/${ image3 }-492x277.jpg?as=webp 492w, url:assets/${ image3 }-720x405.jpg?as=webp 720w, url:assets/${ image3 }-976x549.jpg?as=webp 976w, url:assets/${ image3 }-1350x759.jpg?as=webp 1350w`, type="image/webp")
+                        //-     source(srcset=`assets/${ image3 }-327x184.jpg 327w, assets/${ image3 }-492x277.jpg 492w, assets/${ image3 }-720x405.jpg 720w, assets/${ image3 }-976x549.jpg 976w, assets/${ image3 }-1350x759.jpg 1350w`, type="image/jpg")
+                        //-     img(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt3 }`)
+
+            //- p.carousel-status <!-- Talvez não preciso deste -->

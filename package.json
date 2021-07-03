@@ -7,22 +7,24 @@
     "Lucas Sukeyosi <lusuke@gmail.com> (http://lusuke.com.br)"
   ],
   "private": true,
-  "targets": {
+  "target": {
     "main": false
   },
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/index.pug src/about.pug src/work.pug src/contact.pug",
-    "build": "parcel build src/*.pug  --public-url https://lusuke.com.br/site/v1/ --dist-dir docs"
+    "dev": "parcel src/index.pug",
+    "build": "parcel build src/index.pug  --public-url / --dist-dir docs"
   },
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-beta.2",
-    "@parcel/transformer-pug": "^2.0.0-beta.2",
-    "@parcel/transformer-sass": "^2.0.0-beta.2",
-    "cssnano": "^5.0.2",
+    "@parcel/packager-raw-url": "2.0.0-beta.2",
+    "@parcel/transformer-image": "2.0.0-beta.2",
+    "@parcel/transformer-pug": "2.0.0-beta.2",
+    "@parcel/transformer-sass": "2.0.0-beta.2",
+    "@parcel/transformer-webmanifest": "2.0.0-beta.2",
+    "cssnano": "^5.0.6",
     "parcel": "2.0.0-beta.2",
-    "postcss": "^8.2.1",
-    "sass": "^1.32.12",
+    "postcss": "^8.3.5",
+    "sass": "^1.35.1",
     "sharp": "^0.28.3"
   },
   "dependencies": {

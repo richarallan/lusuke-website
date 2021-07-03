@@ -33,3 +33,6 @@ pugcli.txt
 
 #backup
 backup/
+
+#Yarn Paste
+.yarn/
