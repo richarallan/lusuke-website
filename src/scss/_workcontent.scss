@@ -2,20 +2,22 @@
   display: flex;
   flex-flow: row wrap;
   text-align: left;
-  align-items: center;
+  // align-items: center; //removed
   justify-content: center; /* This property align center*/
-  padding: 5rem 0;
-  margin: 0 auto;
+  padding: 5rem 0 10rem 0; //Desktop View: changed - 5rem 0 -> 5rem 0 10rem 0;
+  // margin: 0 auto; //remove
 
   &__header {
     width: 100%;
     max-width: 192px;
     text-transform: capitalize;
     margin-right: 11.25rem;
+    height: fit-content;
   }
   &__contents {
     width: 100%;
     max-width: 960px;
+    height: fit-content;
     &--text {
       @include fluid-font(1.1rem, 1.5rem);
       max-width: 48.8125rem;
@@ -33,11 +35,12 @@
 @media screen and (max-width: 1199px) {
   .service {
     flex-flow: column nowrap;
+    padding: 2rem 0 6rem 0; //add last build
 
     &__header {
-      padding: 0 3vw 1vh 3vw; /* 12vh = 1vh*/
-      max-width: 350px;
-      width: 90%;
+      // padding: 0 3vw 1vh 3vw; To remover last build
+      max-width: 400px; //350px -> 400px
+      width: 100%; // 90% -> 100%
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;

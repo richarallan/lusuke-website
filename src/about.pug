@@ -17,8 +17,10 @@ block main
     
     section.main__myself
         .main__myself--photo
-            h1
-                img(src="url:assets/lucas-sukeyosi-802x887.jpg?as=webp", alt="I'm Lucas Sukeyosi", class="main__myself--pic", width="802", height="887")
+            picture
+                source(sizes="(max-width:1024px) 768px, 1229px", srcset="url:assets/lusuke-about-mobile.jpg?as=webp 768w, url:assets/lusuke-about-desktop.jpg?as=webp 1229w", type="image/webp")
+                source(srcset="assets/lusuke-about-mobile.jpg 768w, assets/lusuke-about-desktop.jpg 1229w", type="image/jpg")
+                img(sizes="(max-width:1024px) 768px, 1229px", src="assets/1x1.gif", decoding="async", alt="Hi, here's a photo of Lucas Sukeyosi")
 
         .main__myself--description
             p.main--text. 

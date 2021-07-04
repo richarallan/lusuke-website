@@ -8,11 +8,13 @@
     justify-content: center;
 
     &--photo {
-      width: fit-content;
+      width: 100%;
       padding-right: 16rem;
+      max-width: 802px;
 
-      > img {
+      & img {
         width: 100%;
+        max-width: 802px;
       }
     }
 

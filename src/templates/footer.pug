@@ -16,7 +16,7 @@ footer.footer
                 li: a(href=`${ key }`)= val
     
     .footer__items.footer--align
-        p.footer__items--text Let's drink a e-coffee
+        p.footer__items--text.footer__items--first Let's drink a e-coffee
         ul.footer__socialm
             each socialmedia in socialLinks
                 +socialmedia(socialmedia.name, socialmedia.url, socialmedia.slug, socialmedia.pathd)

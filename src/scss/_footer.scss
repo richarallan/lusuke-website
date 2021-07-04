@@ -7,7 +7,8 @@
   justify-content: space-between; //new add
 
   &__items:nth-child(even) {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
   }
 
   &__items {
@@ -24,6 +25,7 @@
   &__logo {
     padding-top: 4.6rem;
     max-width: 413px;
+    width: 100%;
     &--mobile {
       display: none;
     }
@@ -82,6 +84,7 @@
   .footer {
     &__items {
       max-width: 400px;
+      width: 100%;
     }
   }
 }
@@ -96,13 +99,14 @@
       text-align: center;
     }
     &--align {
-      max-width: 100%;
+      width: 100%;
       padding: 3rem 0 2.5rem 0;
     }
 
     &__items:first-child {
       order: 3;
       padding-top: 3rem;
+      width: 100%;
     }
     &__items:last-child {
       order: -1;
@@ -114,6 +118,16 @@
       &--mobile {
         display: inline-block;
         margin-top: 4.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width:430px) {
+  .footer {
+    &__items {
+      &--first {
+        max-width: 265px;
+        margin: 0 auto;
       }
     }
   }

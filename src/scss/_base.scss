@@ -78,8 +78,8 @@ a {
   @media screen and (max-width: 460px) {
     &__page {
       width: 100%;
-      padding: 5rem 1.5rem;
-      margin: 6rem 0;
+      // padding: 5rem 1.5rem; //5rem 1.5rem -> removed
+      margin: 5rem 0 0 0;  //6rem 0 -> 5rem 0 0 0
     }
 
     &__goto {
