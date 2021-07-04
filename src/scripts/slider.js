@@ -1,6 +1,3 @@
-var docStyle = document.documentElement.style;
-var transformProp = typeof docStyle.transform == 'string' ? 'transform' : 'WebkitTransform';
-
 var carouselContainers = document.querySelectorAll('.carousel__container');
 
 for (var i = 0; i < carouselContainers.length; i++) {
@@ -11,19 +8,14 @@ for (var i = 0; i < carouselContainers.length; i++) {
 function initCarouselContainer(container) {
     var options = {
         prevNextButtons: false,
-        imagesLoaded: true,
-        percentPosition: false
+        percentPosition: false,
+        setGallerySize: true,
+        wrapAround: true
     }
     var carousel = container.querySelector('.carousel');
     var flkty = new Flickity(carousel, options);
-    var imgs = carousel.querySelectorAll('.carousel-cell img');
+    // var imgs = carousel.querySelectorAll('.carousel-cell');
 
-    flkty.on('scroll', function () {
-        flkty.slides.forEach(function (slide, i) {
-            var img = imgs[i];
-            var x = (slide.target + flkty.x) * -1 / 3;
-            img.style[transformProp] = 'translateX(' + x + 'px)';
-        })
-    });
+    flkty.on('select');
 
 }

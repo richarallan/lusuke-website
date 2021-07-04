@@ -6,10 +6,14 @@
   padding: 3rem 3.4vw;
   justify-content: space-between; //new add
 
+  &__items:nth-child(even) {
+    width: 400px;
+  }
+
   &__items {
     // flex: 1;
     // max-width: 400px; //new add
-    padding: 3rem 0 3rem 0; //padding: 3rem calc((1 / 10) * 100%) 3rem 0;
+    padding: 3rem 0 2.5rem 0; //padding: 3rem calc((1 / 10) * 100%) 3rem 0;
 
     &--text {
       font: normal normal bolder 1.5rem "Syncopate";
@@ -20,11 +24,13 @@
   &__logo {
     padding-top: 4.6rem;
     max-width: 413px;
+    &--mobile {
+      display: none;
+    }
   }
   &__menu {
     list-style: none;
     padding: 0;
-    text-align: center;
     & li {
       padding: 0.3rem 0;
       display: inline-block;
@@ -55,7 +61,6 @@
   &__socialm {
     margin-top: 1.5rem;
     padding: 0;
-    text-align: center;
     & li {
       display: inline-block;
       padding: 0 1.5rem 0 0;
@@ -80,30 +85,36 @@
     }
   }
 }
-@media screen and (max-width: 1355px) { //changed 720 to -> 1355px
+@media screen and (max-width: 1355px) {
   .footer {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    padding: 3rem 1.5rem; //
-    text-align: center; //
+    padding: 3rem 1.5rem 2.5rem 1.5rem;
+    text-align: center;
     &__items {
       text-align: center;
     }
     &--align {
       max-width: 100%;
-      padding: 3rem 0;
+      padding: 3rem 0 2.5rem 0;
     }
 
     &__items:first-child {
-      text-align: left;
       order: 3;
+      padding-top: 3rem;
     }
     &__items:last-child {
       order: -1;
     }
-  }
-  .padding-48 {
-    text-align: left;
+    &__logo {
+      &--desktop {
+        display: none;
+      }
+      &--mobile {
+        display: inline-block;
+        margin-top: 4.5rem;
+      }
+    }
   }
 }

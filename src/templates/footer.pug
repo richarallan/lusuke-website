@@ -1,13 +1,13 @@
 footer.footer 
     .footer__items.footer__logo
-        img(src="../src/assets/lusuke__logo--footer.png", alt="Lusuke Website", width="114", height="43")
-        p.padding-48. 
+        img(src="../src/assets/lusuke__logo--footer.png", alt="Logotipo do website de Lusuke tem o formato de uma chave, cujo os dentes são caracteres em kanji com o significado do sobrenome Sukeyosi. A parte  mais inicial da chave tem o formato de um S, que faz referência a sukeyosi e ao simbolo de moeda $", class="footer__logo--desktop", width="114", height="43")
+        p. 
             &copy; 2021 – Some rights reserved. Lucas Sukeyosi aka lusuke. 
             Website typefaces: #[a(href="https://fonts.google.com/specimen/Syncopate" class="main--green" target="_blank" rel="nofollow noopener noreferrer") Syncopate] 
             & #[a(href="https://fonts.google.com/specimen/Lato" class="main--green" target="_blank" rel="nofollow noopener noreferrer") Lato].
             A sincere thanks to #[a(href="https://github.com/richarallan" target="_blank" rel="nofollow noopener noreferrer" class="main--green") Richar]
             that borrow his expertise in development, made it possible.
-        //- about__professional -> main--greenlink
+        img(src="../src/assets/lusuke__logo--footer.png", alt="Logotipo do website de Lusuke tem o formato de uma chave, cujo os dentes são caracteres em kanji com o significado do sobrenome Sukeyosi. A parte  mais inicial da chave tem o formato de um S, que faz referência a sukeyosi e ao simbolo de moeda $", class="footer__logo--mobile", width="114", height="43")
     
     .footer__items
         p.footer__items--text You scroll it All the way Through
@@ -20,8 +20,7 @@ footer.footer
         ul.footer__socialm
             each socialmedia in socialLinks
                 +socialmedia(socialmedia.name, socialmedia.url, socialmedia.slug, socialmedia.pathd)
-//- script(src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js") REMOVER
-script(src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js")
+//- script(async src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js")
 //- script(async src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js")
 script(async src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js")
 script(async src="scripts/slider.js")
