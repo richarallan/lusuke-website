@@ -13,7 +13,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "rm -rf dist/* && parcel src/index.pug",
-    "build": "parcel build src/index.pug  --public-url /site/v2 --dist-dir docs"
+    "build": "parcel build src/index.pug  --public-url /lusuke-website/ --dist-dir docs"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "2.0.0-beta.2",
