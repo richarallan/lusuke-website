@@ -12,12 +12,12 @@
         margin: 3rem auto 4rem auto; //mobile fix: replace 2.5rem -> 3rem auto 4rem auto;
     }
     &-cell {
-        max-width: 1350px;
+        width: 100%;
         max-height: 759px;
         object-fit: contain;
 
         & img {
-            height: 759px;
+            width: 100%;
         }
     }
     // &-cell::before {
