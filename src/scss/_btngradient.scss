@@ -71,9 +71,11 @@
 }
 
 @media screen and (max-width: 1255px) {
-    .btn {
-        &--gradient {
-            background-image: none;
+    .menu--nav {
+        & > ul > li > .btn {
+            &--gradient {
+                background-image: none;
+            }
         }
     }
 }

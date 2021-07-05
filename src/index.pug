@@ -2,16 +2,10 @@ extends templates/layout
 
 block main
     section.main__intro
-        picture
-            source(sizes="(max-width:540px) 1020px, (min-width:541px) and (max-width:1024px) 1660px, 2300px", srcset="url:assets/heroimage-1020x1440.jpg?as=webp 1020w, url:assets/heroimage-1660x1440.jpg?as=webp 1660w, url:assets/heroimage-2300x1924.jpg?as=webp 2300w", type="image/webp")
-            source(srcset="assets/heroimage-1020x1440.jpg 1020w, assets/heroimage-1660x1440.jpg 1660w, assets/heroimage-2300x1924.jpg 2300w", type="image/jpg")
-            img(sizes="(max-width:540px) 1020px, (min-width:541px) and (max-width:1024px) 1660px, 2300px", src="assets/1x1.gif", decoding="async", alt="Lucas presenting your skills: beer crafter, coffee lover, garage musician, graduate economics finances and master digital marketing and design")
-            
-            //- source(data-srcset="assets/heroimage-2300x1924.jpg 2300w", type="image/jpg")
-            //- img(src="url:assets/heroimage-lowquality.jpg?quality=25", data-src="url:assets/heroimage-2300x1924.jpg?as=webp" alt="Hi, here's a photo of Lucas Sukeyosi", class="lazyload")
-            //- source(sizes="(max-width:375px) 375px, (min-width:376px) and (max-width:540px) 540px, (min-width:541px) and (max-width:768px) 768px, (min-width:769px) and (max-width:1920px) 1903px, 2560px", srcset="url:assets/lusuke-presentation-375x425.jpg?as=webp 375w, url:assets/lusuke-presentation-540x612.jpg?as=webp 540w, url:assets/lusuke-presentation-768x432.jpg?as=webp 768w, url:assets/lusuke-presentation-1903x1070.jpg?as=webp 1903w, url:assets/lusuke-presentation-2560x1440.jpg?as=webp 2560w", type="image/webp")
-            //- source(srcset="assets/lusuke-presentation-375x425.jpg 375w, assets/lusuke-presentation-540x612.jpg 540w, assets/lusuke-presentation-768x432.jpg 768w, assets/lusuke-presentation-1903x1070.jpg 1903w, assets/lusuke-presentation-2560x1440.jpg 2560w", type="image/jpg")
-            //- img(sizes="(max-width:375px) 375px, (min-width:376px) and (max-width:540px) 540px, (min-width:541px) and (max-width:768px) 768px, (min-width:769px) and (max-width:1920px) 1903px, 2560px", src="assets/1x1.gif", decoding="async", role="presentation", alt="Lucas presenting your skills: beer crafter, coffee lover, garage musician, graduate economics finances and master digital marketing and design")
+        //- picture
+        //-     source(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", srcset="url:assets/heroimage-1020x1440.jpg?as=webp 1020w, url:assets/heroimage-1660x1440.jpg?as=webp 1660w, url:assets/heroimage-2300x1924.jpg?as=webp 2300w", type="image/webp")
+        //-     source(srcset="assets/heroimage-1020x1440.jpg 1020w, assets/heroimage-1660x1440.jpg 1660w, assets/heroimage-2300x1924.jpg 2300w", type="image/jpg")
+        img(srcset="url:assets/heroimage-1020x1440.jpg?as=webp 1020w, url:assets/heroimage-1660x1440.jpg?as=webp 1660w, url:assets/heroimage-2300x1924.jpg?as=webp 2300w", sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", src="assets/1x1.gif", decoding="async", alt="Lucas presenting your skills: beer crafter, coffee lover, garage musician, graduate economics finances and master digital marketing and design")
     
     section#about.main__about
         .main__avatar
@@ -31,9 +25,6 @@ block main
                 source(srcset="assets/perfil-home-mobile.jpg 800w, assets/perfil-home-desktop.jpg 1604w", type="image/jpg")
                 img(sizes="(max-width:1024px) 800px, 1604px", src="assets/1x1.gif", decoding="async", alt="Hi, here's a photo of Lucas Sukeyosi")
 
-                //- source(sizes="(max-width:540px) 375px, (min-width:541px) and (max-width:768px) 540px, 802px", srcset="url:assets/lucas-sukeyosi-375x415.jpg?as=webp 375w, url:assets/lucas-sukeyosi-540x597.jpg?as=webp 540w, url:assets/lucas-sukeyosi-802x887.jpg?as=webp 802w", type="image/webp")
-                //- source(srcset="assets/lucas-sukeyosi-375x415.jpg 375w, assets/lucas-sukeyosi-540x597.jpg 540w, assets/lucas-sukeyosi-802x887.jpg 802w", type="image/jpg")
-                //- img(sizes="(max-width:540px) 375px, (min-width:541px) and (max-width:768px) 540px, 802px", src="assets/1x1.gif", decoding="async", role="presentation", class="lazyload" alt="Hi, here's a photo of Lucas Sukeyosi")
         .main__me
             h1.main--header.main__me--desktop Olá
                 br
