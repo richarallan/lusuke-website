@@ -17,15 +17,10 @@ block main
                 . 
                     Sukeyosi.
             p.main--normal.main__about--mobile. 
-                A Latin American self-taught multidisciplinary designer,
+                A Latin American self-taught designer,
                 with a degree in economics.
 
-            picture
-                source(media="(max-width: 1024px)", data-srcset=`${ perfilHomeMobileWebp }` type="image/webp")
-                source(data-srcset=`${ perfilHomeDesktopWebp }` type="image/webp")
-                source(media="(max-width: 1024px)", srcset=`${ perfilHomeMobileJpg }` type="image/jpg")
-                source(data-srcset=`${ perfilHomeDesktopJpg }` type="image/jpg")
-                img(src="assets/1x1.gif", data-src=`${ perfilHomeDesktopJpg }`, alt="Hi, here's a photo of Lucas Sukeyosi studying economics in your office, under your desk have some books of behavior economics" class="lazyload")
+            img(sizes="(max-width:1024px) 768px, 1229px", src="assets/1x1.gif", data-srcset=`${ perfilHomeMobileWebp } 768w, ${ perfilHomeDesktopWebp } 1229w`, data-src=`${ perfilHomeMobileWebp }`, alt="Hi, here's a photo of Lucas Sukeyosi studying economics in your office, under your desk have some books of behavior economics" class="lazyload")
 
         .main__me
             h1.main--header.main__me--desktop Olá
@@ -36,7 +31,7 @@ block main
                 . 
                     Sukeyosi.
             p.main--normal.main__me--desktop. 
-                A Latin American self-taught multidisciplinary designer,
+                A Latin American self-taught designer,
                 with a degree in economics.
                 
             p.main--text You can say I’m a #[span.main--green multidisciplinary Designer or an Economist specializing in finance, investment, and banking].
