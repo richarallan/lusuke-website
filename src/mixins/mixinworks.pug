@@ -29,60 +29,210 @@ mixin work(client, roles, roles1, roles2, roles3, roles4, roles5, enterprise, te
                 if image1
                     div.carousel-cell
                         picture
-                            source(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", srcset=`url:assets/${ image1 }-1020x574.jpg?as=webp 1020w, url:assets/${ image1 }-1660x934.jpg?as=webp 1024w, url:assets/${ image1 }-2300x1924.jpg?as=webp 2300w`, type="image/webp")
-                            source(srcset=`assets/${ image1 }-1020x574.jpg 1020w, assets/${ image1 }-1660x934.jpg 1660w, assets/${ image1 }-2300x1924.jpg 2300w`, type="image/jpg")
-                            img(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt1 }`)
+                            - var img1aWebp =`url:assets/${ image1 }-1020x574.jpg?as=webp`;
+                            - var img1bWebp =`url:assets/${ image1 }-1660x934.jpg?as=webp`;
+                            - var img1cWebp =`url:assets/${ image1 }-2300x1924.jpg?as=webp`;
+                            - var img1aJpg = `assets/${ image1 }-1020x574.jpg`;
+                            - var img1bJpg = `assets/${ image1 }-1660x934.jpg`;
+                            - var img1cJpg = `assets/${ image1 }-2300x1924.jpg`;
+                            //- images webp
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img1aWebp } 1020w`, type="image/webp")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img1bWebp } 1660w`, type="image/webp")
+                            source(data-srcset=`${ img1cWebp } 2300w`, type="image/webp")
+                            
+                            //- images jpg
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img1aJpg } 1020w`, type="image/jpg")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img1bJpg } 1660w`, type="image/jpg")
+                            source(data-srcset=`${ img1cJpg } 2300w`, type="image/jpg")
+
+                            //- tag img
+                            img(src="assets/1x1.gif", data-src=`${ img1cJpg }`, alt=`${ alt1 }`, class="lazyload")
                 if image2
                     div.carousel-cell
                         picture
-                            source(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", srcset=`url:assets/${ image2 }-1020x574.jpg?as=webp 1020w, url:assets/${ image2 }-1660x934.jpg?as=webp 1024w, url:assets/${ image2 }-2300x1924.jpg?as=webp 2300w`, type="image/webp")
-                            source(srcset=`assets/${ image2 }-1020x574.jpg 1020w, assets/${ image2 }-1660x934.jpg 1660w, assets/${ image2 }-2300x1924.jpg 2300w`, type="image/jpg")
-                            img(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt2 }`)
+                            - var img2dWebp =`url:assets/${ image2 }-1020x574.jpg?as=webp`;
+                            - var img2eWebp =`url:assets/${ image2 }-1660x934.jpg?as=webp`;
+                            - var img2fWebp =`url:assets/${ image2 }-2300x1924.jpg?as=webp`;
+                            - var img2dJpg = `assets/${ image2 }-1020x574.jpg`;
+                            - var img2eJpg = `assets/${ image2 }-1660x934.jpg`;
+                            - var img2fJpg = `assets/${ image2 }-2300x1924.jpg`;
+                            //- images webp
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img2dWebp } 1020w`, type="image/webp")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img2eWebp } 1660w`, type="image/webp")
+                            source(data-srcset=`${ img2fWebp } 2300w`, type="image/webp")
+                            
+                            //- images jpg
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img2dJpg } 1020w`, type="image/jpg")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img2eJpg } 1660w`, type="image/jpg")
+                            source(data-srcset=`${ img2fJpg } 2300w`, type="image/jpg")
+
+                            //- tag img
+                            img(src="assets/1x1.gif", data-src=`${ img2fJpg }`, alt=`${ alt2 }`, class="lazyload")
                 if image3
                     div.carousel-cell
                         picture
-                            source(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", srcset=`url:assets/${ image3 }-1020x574.jpg?as=webp 1020w, url:assets/${ image3 }-1660x934.jpg?as=webp 1024w, url:assets/${ image3 }-2300x1924.jpg?as=webp 2300w`, type="image/webp")
-                            source(srcset=`assets/${ image3 }-1020x574.jpg 1020w, assets/${ image3 }-1660x934.jpg 1660w, assets/${ image3 }-2300x1924.jpg 2300w`, type="image/jpg")
-                            img(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt3 }`)
+                            - var img3gWebp =`url:assets/${ image3 }-1020x574.jpg?as=webp`;
+                            - var img3hWebp =`url:assets/${ image3 }-1660x934.jpg?as=webp`;
+                            - var img3iWebp =`url:assets/${ image3 }-2300x1924.jpg?as=webp`;
+                            - var img3gJpg = `assets/${ image3 }-1020x574.jpg`;
+                            - var img3hJpg = `assets/${ image3 }-1660x934.jpg`;
+                            - var img3iJpg = `assets/${ image3 }-2300x1924.jpg`;
+                            //- images webp
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img3gWebp } 1020w`, type="image/webp")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img3hWebp } 1660w`, type="image/webp")
+                            source(data-srcset=`${ img3iWebp } 2300w`, type="image/webp")
+                            
+                            //- images jpg
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img3gJpg } 1020w`, type="image/jpg")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img3hJpg } 1660w`, type="image/jpg")
+                            source(data-srcset=`${ img3iJpg } 2300w`, type="image/jpg")
+
+                            //- tag img
+                            img(src="assets/1x1.gif", data-src=`${ img3iJpg }`, alt=`${ alt3 }`, class="lazyload")
                 if image4
                     div.carousel-cell
                         picture
-                            source(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", srcset=`url:assets/${ image4 }-1020x574.jpg?as=webp 1020w, url:assets/${ image4 }-1660x934.jpg?as=webp 1024w, url:assets/${ image4 }-2300x1924.jpg?as=webp 2300w`, type="image/webp")
-                            source(srcset=`assets/${ image4 }-1020x574.jpg 1020w, assets/${ image4 }-1660x934.jpg 1660w, assets/${ image4 }-2300x1924.jpg 2300w`, type="image/jpg")
-                            img(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt4 }`)
+                            - var img4kWebp =`url:assets/${ image4 }-1020x574.jpg?as=webp`;
+                            - var img4lWebp =`url:assets/${ image4 }-1660x934.jpg?as=webp`;
+                            - var img4mWebp =`url:assets/${ image4 }-2300x1924.jpg?as=webp`;
+                            - var img4jJpg = `assets/${ image4 }-1020x574.jpg`;
+                            - var img4kJpg = `assets/${ image4 }-1660x934.jpg`;
+                            - var img4lJpg = `assets/${ image4 }-2300x1924.jpg`;
+                            //- images webp
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img4jWebp } 1020w`, type="image/webp")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img4kWebp } 1660w`, type="image/webp")
+                            source(data-srcset=`${ img4lWebp } 2300w`, type="image/webp")
+                            
+                            //- images jpg
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img4jJpg } 1020w`, type="image/jpg")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img4kJpg } 1660w`, type="image/jpg")
+                            source(data-srcset=`${ img4lJpg } 2300w`, type="image/jpg")
+
+                            //- tag img
+                            img(src="assets/1x1.gif", data-src=`${ img4lJpg }`, alt=`${ alt4 }`, class="lazyload")
                 if image5
                     div.carousel-cell
                         picture
-                            source(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", srcset=`url:assets/${ image5 }-1020x574.jpg?as=webp 1020w, url:assets/${ image5 }-1660x934.jpg?as=webp 1024w, url:assets/${ image5 }-2300x1924.jpg?as=webp 2300w`, type="image/webp")
-                            source(srcset=`assets/${ image5 }-1020x574.jpg 1020w, assets/${ image5 }-1660x934.jpg 1660w, assets/${ image5 }-2300x1924.jpg 2300w`, type="image/jpg")
-                            img(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt5 }`)
+                            - var img5nWebp =`url:assets/${ image5 }-1020x574.jpg?as=webp`;
+                            - var img5oWebp =`url:assets/${ image5 }-1660x934.jpg?as=webp`;
+                            - var img5pWebp =`url:assets/${ image5 }-2300x1924.jpg?as=webp`;
+                            - var img5nJpg = `assets/${ image5 }-1020x574.jpg`;
+                            - var img5oJpg = `assets/${ image5 }-1660x934.jpg`;
+                            - var img5pJpg = `assets/${ image5 }-2300x1924.jpg`;
+                            //- images webp
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img5nWebp } 1020w`, type="image/webp")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img5oWebp } 1660w`, type="image/webp")
+                            source(data-srcset=`${ img5pWebp } 2300w`, type="image/webp")
+                            
+                            //- images jpg
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img5nJpg } 1020w`, type="image/jpg")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img5oJpg } 1660w`, type="image/jpg")
+                            source(data-srcset=`${ img5pJpg } 2300w`, type="image/jpg")
+
+                            //- tag img
+                            img(src="assets/1x1.gif", data-src=`${ img5pJpg }`, alt=`${ alt5 }`, class="lazyload")
                 if image6
                     div.carousel-cell
                         picture
-                            source(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", srcset=`url:assets/${ image6 }-1020x574.jpg?as=webp 1020w, url:assets/${ image6 }-1660x934.jpg?as=webp 1024w, url:assets/${ image6 }-2300x1924.jpg?as=webp 2300w`, type="image/webp")
-                            source(srcset=`assets/${ image6 }-1020x574.jpg 1020w, assets/${ image6 }-1660x934.jpg 1660w, assets/${ image6 }-2300x1924.jpg 2300w`, type="image/jpg")
-                            img(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt6 }`)
+                            - var img6qWebp =`url:assets/${ image6 }-1020x574.jpg?as=webp`;
+                            - var img6rWebp =`url:assets/${ image6 }-1660x934.jpg?as=webp`;
+                            - var img6sWebp =`url:assets/${ image6 }-2300x1924.jpg?as=webp`;
+                            - var img6qJpg = `assets/${ image6 }-1020x574.jpg`;
+                            - var img6rJpg = `assets/${ image6 }-1660x934.jpg`;
+                            - var img6sJpg = `assets/${ image6 }-2300x1924.jpg`;
+                            //- images webp
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img6qWebp } 1020w`, type="image/webp")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img6rWebp } 1660w`, type="image/webp")
+                            source(data-srcset=`${ img6sWebp } 2300w`, type="image/webp")
+                            
+                            //- images jpg
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img6qJpg } 1020w`, type="image/jpg")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img6rJpg } 1660w`, type="image/jpg")
+                            source(data-srcset=`${ img6sJpg } 2300w`, type="image/jpg")
+
+                            //- tag img
+                            img(src="assets/1x1.gif", data-src=`${ img6sJpg }`, alt=`${ alt6 }`, class="lazyload")
                 if image7
                     div.carousel-cell
                         picture
-                            source(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", srcset=`url:assets/${ image7 }-1020x574.jpg?as=webp 1020w, url:assets/${ image7 }-1660x934.jpg?as=webp 1024w, url:assets/${ image7 }-2300x1924.jpg?as=webp 2300w`, type="image/webp")
-                            source(srcset=`assets/${ image7 }-1020x574.jpg 1020w, assets/${ image7 }-1660x934.jpg 1660w, assets/${ image7 }-2300x1924.jpg 2300w`, type="image/jpg")
-                            img(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt7 }`)
+                            - var img7tWebp =`url:assets/${ image7 }-1020x574.jpg?as=webp`;
+                            - var img7uWebp =`url:assets/${ image7 }-1660x934.jpg?as=webp`;
+                            - var img7vWebp =`url:assets/${ image7 }-2300x1924.jpg?as=webp`;
+                            - var img7tJpg = `assets/${ image7 }-1020x574.jpg`;
+                            - var img7uJpg = `assets/${ image7 }-1660x934.jpg`;
+                            - var img7vJpg = `assets/${ image7 }-2300x1924.jpg`;
+                            //- images webp
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img7tWebp } 1020w`, type="image/webp")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img7uWebp } 1660w`, type="image/webp")
+                            source(data-srcset=`${ img7vWebp } 2300w`, type="image/webp")
+                            
+                            //- images jpg
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img7tJpg } 1020w`, type="image/jpg")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img7uJpg } 1660w`, type="image/jpg")
+                            source(data-srcset=`${ img7vJpg } 2300w`, type="image/jpg")
+
+                            //- tag img
+                            img(src="assets/1x1.gif", data-src=`${ img7vJpg }`, alt=`${ alt7 }`, class="lazyload")
                 if image8
                     div.carousel-cell
                         picture
-                            source(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", srcset=`url:assets/${ image8 }-1020x574.jpg?as=webp 1020w, url:assets/${ image8 }-1660x934.jpg?as=webp 1024w, url:assets/${ image8 }-2300x1924.jpg?as=webp 2300w`, type="image/webp")
-                            source(srcset=`assets/${ image8 }-1020x574.jpg 1020w, assets/${ image8 }-1660x934.jpg 1660w, assets/${ image8 }-2300x1924.jpg 2300w`, type="image/jpg")
-                            img(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt8 }`)
+                            - var img8wWebp =`url:assets/${ image8 }-1020x574.jpg?as=webp`;
+                            - var img8xWebp =`url:assets/${ image8 }-1660x934.jpg?as=webp`;
+                            - var img8yWebp =`url:assets/${ image8 }-2300x1924.jpg?as=webp`;
+                            - var img8wJpg = `assets/${ image8 }-1020x574.jpg`;
+                            - var img8xJpg = `assets/${ image8 }-1660x934.jpg`;
+                            - var img8yJpg = `assets/${ image8 }-2300x1924.jpg`;
+                            //- images webp
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img8wWebp } 1020w`, type="image/webp")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img8xWebp } 1660w`, type="image/webp")
+                            source(data-srcset=`${ img8yWebp } 2300w`, type="image/webp")
+                            
+                            //- images jpg
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img8wJpg } 1020w`, type="image/jpg")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img8xJpg } 1660w`, type="image/jpg")
+                            source(data-srcset=`${ img8yJpg } 2300w`, type="image/jpg")
+
+                            //- tag img
+                            img(src="assets/1x1.gif", data-src=`${ img8yJpg }`, alt=`${ alt8 }`, class="lazyload")
                 if image9
                     div.carousel-cell
                         picture
-                            source(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", srcset=`url:assets/${ image9 }-1020x574.jpg?as=webp 1020w, url:assets/${ image9 }-1660x934.jpg?as=webp 1024w, url:assets/${ image9 }-2300x1924.jpg?as=webp 2300w`, type="image/webp")
-                            source(srcset=`assets/${ image9 }-1020x574.jpg 1020w, assets/${ image9 }-1660x934.jpg 1660w, assets/${ image9 }-2300x1924.jpg 2300w`, type="image/jpg")
-                            img(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt9 }`)
+                            - var img9zaWebp =`url:assets/${ image9 }-1020x574.jpg?as=webp`;
+                            - var img9zbWebp =`url:assets/${ image9 }-1660x934.jpg?as=webp`;
+                            - var img9zcWebp =`url:assets/${ image9 }-2300x1924.jpg?as=webp`;
+                            - var img9zaJpg = `assets/${ image9 }-1020x574.jpg`;
+                            - var img9zbJpg = `assets/${ image9 }-1660x934.jpg`;
+                            - var img9zcJpg = `assets/${ image9 }-2300x1924.jpg`;
+                            //- images webp
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img9zaWebp } 1020w`, type="image/webp")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img9zbWebp } 1660w`, type="image/webp")
+                            source(data-srcset=`${ img9zcWebp } 2300w`, type="image/webp")
+                            
+                            //- images jpg
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img9zaJpg } 1020w`, type="image/jpg")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img9zbJpg } 1660w`, type="image/jpg")
+                            source(data-srcset=`${ img9zcJpg } 2300w`, type="image/jpg")
+
+                            //- tag img
+                            img(src="assets/1x1.gif", data-src=`${ img9zcJpg }`, alt=`${ alt9 }`, class="lazyload")
                 if image10
                     div.carousel-cell
                         picture
-                            source(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", srcset=`url:assets/${ image10 }-1020x574.jpg?as=webp 1020w, url:assets/${ image10 }-1660x934.jpg?as=webp 1024w, url:assets/${ image10 }-2300x1924.jpg?as=webp 2300w`, type="image/webp")
-                            source(srcset=`assets/${ image10 }-1020x574.jpg 1020w, assets/${ image10 }-1660x934.jpg 1660w, assets/${ image10 }-2300x1924.jpg 2300w`, type="image/jpg")
-                            img(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt10 }`)
+                            - var img10zdWebp =`url:assets/${ image10 }-1020x574.jpg?as=webp`;
+                            - var img10zeWebp =`url:assets/${ image10 }-1660x934.jpg?as=webp`;
+                            - var img10zfWebp =`url:assets/${ image10 }-2300x1924.jpg?as=webp`;
+                            - var img10zdJpg = `assets/${ image10 }-1020x574.jpg`;
+                            - var img10zeJpg = `assets/${ image10 }-1660x934.jpg`;
+                            - var img10zfJpg = `assets/${ image10 }-2300x1924.jpg`;
+                            //- images webp
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img10zdWebp } 1020w`, type="image/webp")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img10zeWebp } 1660w`, type="image/webp")
+                            source(data-srcset=`${ img10zfWebp } 2300w`, type="image/webp")
+                            
+                            //- images jpg
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img10zdJpg } 1020w`, type="image/jpg")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img10zeJpg } 1660w`, type="image/jpg")
+                            source(data-srcset=`${ img10zfJpg } 2300w`, type="image/jpg")
+
+                            //- tag img
+                            img(src="assets/1x1.gif", data-src=`${ img10zfJpg }`, alt=`${ alt10 }`, class="lazyload")

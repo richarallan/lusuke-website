@@ -18,9 +18,11 @@ block main
     section.main__myself
         .main__myself--photo
             picture
-                source(sizes="(max-width:1024px) 768px, 1229px", srcset="url:assets/lusuke-about-mobile.jpg?as=webp 768w, url:assets/lusuke-about-desktop.jpg?as=webp 1229w", type="image/webp")
-                source(srcset="assets/lusuke-about-mobile.jpg 768w, assets/lusuke-about-desktop.jpg 1229w", type="image/jpg")
-                img(sizes="(max-width:1024px) 768px, 1229px", src="assets/1x1.gif", decoding="async", alt="Hi, here's a photo of Lucas Sukeyosi")
+                source(media="(max-width: 1024px)", srcset=`${ perfilAboutMobileWebp } 768w` type="image/webp")
+                source(srcset=`${ perfilAboutDesktopWebp }` type="image/webp")
+                source(media="(max-width: 1024px)", srcset=`${ perfilAboutMobileJpg }8w` type="image/jpg")
+                source(srcset=`${ perfilAboutDesktopJpg }` type="image/jpg")
+                img(src="assets/1x1.gif", alt="Hi, here's a photo of Lucas Sukeyosi studying economics in your office, under your desk have some books of behavior economics")
 
         .main__myself--description
             p.main--text. 

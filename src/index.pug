@@ -21,9 +21,11 @@ block main
                 with a degree in economics.
 
             picture
-                source(sizes="(max-width:1024px) 800px, 1604px", srcset="url:assets/perfil-home-mobile.jpg?as=webp 800w, url:assets/perfil-home-desktop.jpg?as=webp 1604w", type="image/webp")
-                source(srcset="assets/perfil-home-mobile.jpg 800w, assets/perfil-home-desktop.jpg 1604w", type="image/jpg")
-                img(sizes="(max-width:1024px) 800px, 1604px", src="assets/1x1.gif", decoding="async", alt="Hi, here's a photo of Lucas Sukeyosi")
+                source(media="(max-width: 1024px)", data-srcset=`${ perfilHomeMobileWebp }` type="image/webp")
+                source(data-srcset=`${ perfilHomeDesktopWebp }` type="image/webp")
+                source(media="(max-width: 1024px)", srcset=`${ perfilHomeMobileJpg }` type="image/jpg")
+                source(data-srcset=`${ perfilHomeDesktopJpg }` type="image/jpg")
+                img(src="assets/1x1.gif", data-src=`${ perfilHomeDesktopJpg }`, alt="Hi, here's a photo of Lucas Sukeyosi studying economics in your office, under your desk have some books of behavior economics" class="lazyload")
 
         .main__me
             h1.main--header.main__me--desktop Olá
