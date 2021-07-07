@@ -1,72 +1,73 @@
 .service {
-  display: flex;
-  flex-flow: row wrap;
-  text-align: left;
-  // align-items: center; //removed
-  justify-content: center; /* This property align center*/
-  padding: 5rem 0 10rem 0; //Desktop View: changed - 5rem 0 -> 5rem 0 10rem 0;
-  // margin: 0 auto; //remove
-
-  &__header {
-    width: 100%;
-    max-width: 192px;
-    text-transform: capitalize;
-    margin-right: 11.25rem;
-    height: fit-content;
-  }
-  &__contents {
-    width: 100%;
-    max-width: 960px;
-    height: fit-content;
-    &--text {
-      @include fluid-font(1.1rem, 1.5rem);
-      max-width: 48.8125rem;
-    }
-  }
-  & ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    & li {
-      margin: 0.15rem 0;
-    }
-  }
-}
-@media screen and (max-width: 1199px) {
-  .service {
-    flex-flow: column nowrap;
-    padding: 2rem 0 6rem 0; //add last build
-
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    // align-items: center; //removed
+    justify-content: center; /* This property align center*/
+    padding: 5rem 0 10rem 0; //Desktop View: changed - 5rem 0 -> 5rem 0 10rem 0;
+    // margin: 0 auto; //remove
+  
     &__header {
-      // padding: 0 3vw 1vh 3vw; To remover last build
-      max-width: 400px; //350px -> 400px
-      width: 100%; // 90% -> 100%
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      margin: 0 auto;
-      order: 1;
-      text-align: center;
-    }
-
-    &__contents {
-      padding: 3.125rem 1.25rem; /* old values padding: 3.125rem 3rem 3rem 3rem; */
-      order: -2;
       width: 100%;
-      box-sizing: border-box;
-      &--header {
-        text-align: center;
-      }
-
-      > h1 {
-        text-align: center;
-      }
+      max-width: 192px;
+      text-transform: capitalize;
+      margin-right: 11.25rem;
+      height: fit-content;
+    }
+    &__contents {
+      width: 100%;
+      max-width: 960px;
+      height: fit-content;
       &--text {
-        margin: 1.5rem auto;
+        @include fluid-font(1rem, 1.5rem); //changed 1.1rem to -> 1rem
+        max-width: 48.8125rem;
       }
-      & ul {
-        text-align: center;
+    }
+    & ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      & li {
+        margin: 0.15rem 0;
       }
     }
   }
-}
+  @media screen and (max-width: 1199px) {
+    .service {
+      flex-flow: column nowrap;
+      padding: 2rem 0 6rem 0; //add last build
+  
+      &__header {
+        // padding: 0 3vw 1vh 3vw; To remover last build
+        max-width: 400px; //350px -> 400px
+        width: 100%; // 90% -> 100%
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        order: 1;
+        text-align: left;
+      }
+  
+      &__contents {
+        padding: 3.125rem 0; /* changed 1.25rem to -> 0 */
+        order: -2;
+        width: 100%;
+        box-sizing: border-box;
+        // &--header {
+        //   text-align: center; //removed
+        // }
+  
+        > h1 {
+          text-align: center;
+        }
+        &--text {
+          margin: 1.5rem auto;
+        }
+        & ul {
+          text-align: center;
+        }
+      }
+    }
+  }
+  

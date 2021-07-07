@@ -10,7 +10,8 @@ function initCarouselContainer(container) {
         prevNextButtons: false,
         percentPosition: false,
         setGallerySize: true,
-        wrapAround: true
+        wrapAround: true,
+        resize: true //added
     }
     var carousel = container.querySelector('.carousel');
     var flkty = new Flickity(carousel, options);

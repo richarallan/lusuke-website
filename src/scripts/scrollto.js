@@ -1,4 +1,4 @@
-const scrollLinks = document.querySelector(".menu__link--nolink");
+const scrollLinks = document.querySelector(".menu__link--risk");
 const botLink = document.querySelector(".footer__menu li a");
 
 // for (const link of scrollLinks) {

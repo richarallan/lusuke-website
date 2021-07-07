@@ -2,10 +2,8 @@ extends templates/layout
 
 block main
     section.main__intro
-        //- picture
-        //-     source(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", srcset="url:assets/heroimage-1020x1440.jpg?as=webp 1020w, url:assets/heroimage-1660x1440.jpg?as=webp 1660w, url:assets/heroimage-2300x1924.jpg?as=webp 2300w", type="image/webp")
-        //-     source(srcset="assets/heroimage-1020x1440.jpg 1020w, assets/heroimage-1660x1440.jpg 1660w, assets/heroimage-2300x1924.jpg 2300w", type="image/jpg")
-        img(srcset="url:assets/heroimage-1020x1440.jpg?as=webp 1020w, url:assets/heroimage-1660x1440.jpg?as=webp 1660w, url:assets/heroimage-2300x1924.jpg?as=webp 2300w", sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", src="assets/1x1.gif", decoding="async", alt="Lucas presenting your skills: beer crafter, coffee lover, garage musician, graduate economics finances and master digital marketing and design")
+        img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/heroimage-lowquality.jpg?as=webp", srcset="url:assets/heroimage-1020x1440.jpg?as=webp 1020w, url:assets/heroimage-1660x1440.jpg?as=webp 1660w, url:assets/heroimage-2300x1924.jpg?as=webp 2300w", alt="Lucas presenting your skills: beer crafter, cOffee lover, garage musician, graduate economics finances and master digital marketing and design")
+        //- img(srcset="url:assets/heroimage-1020x1440.jpg?as=webp 1020w, url:assets/heroimage-1660x1440.jpg?as=webp 1660w, url:assets/heroimage-2300x1924.jpg?as=webp 2300w", sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", src="assets/1x1.gif", decoding="async", alt="Lucas presenting your skills: beer crafter, coffee lover, garage musician, graduate economics finances and master digital marketing and design")
     
     section#about.main__about
         .main__avatar
@@ -20,7 +18,7 @@ block main
                 A Latin American self-taught designer,
                 with a degree in economics.
 
-            img(sizes="(max-width:1024px) 768px, 1229px", src="assets/1x1.gif", data-srcset=`${ perfilHomeMobileWebp } 768w, ${ perfilHomeDesktopWebp } 1229w`, data-src=`${ perfilHomeMobileWebp }`, alt="Hi, here's a photo of Lucas Sukeyosi studying economics in your office, under your desk have some books of behavior economics" class="lazyload")
+            img(sizes="(max-width:1024px) 300px, 1024px", src="assets/1x1.gif", data-srcset=`${ perfilHomeMobileWebp } 800w, ${ perfilHomeDesktopWebp } 1604w`, data-src=`${ perfilHomeMobileWebp }`, alt="Hi, here's a photo of Lucas Sukeyosi studying economics in your office, under your desk have some books of behavior economics" class="lazyload")
 
         .main__me
             h1.main--header.main__me--desktop Olá

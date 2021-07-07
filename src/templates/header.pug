@@ -8,9 +8,9 @@ nav.menu--nav
     ul.menu__navigation
         if currentPath == 'index'
             each val, key in {'#works': 'work', 'about.pug': 'about'}
-                li.menu__item: a.menu__link--nolink.menu__link(href=`${ key }`): span.menu__link--span= val
+                li.menu__item: a.menu__link--risk.menu__link--metis.menu__link(href=`${ key }`): span.menu__link--span= val
             li.menu__item: a(class="menu__link btn--gradient", href="contact.pug") say hello
         else if currentPath == 'about'
             each val, key in {'index.pug': 'home', 'about.pug': 'about'}
-                li.menu__item: a.menu__link(href=`${ key }`): span.menu__link--span= val
+                li.menu__item: a.menu__link--risk.menu__link--metis.menu__link(href=`${ key }`): span.menu__link--span= val
             li.menu__item: a(class="menu__link btn--gradient", href="contact.pug") say hello
