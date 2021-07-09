@@ -16,18 +16,39 @@ block main
         //-     | Keep scrolling
     
     section.main__form
-        form(action="", method="post", class="main__form--contact")
+        form(action="", class="main__form--contact")
             .main__form--grid
                 label(for="firstname", class="main__form--label") First name
                 input(type="text", name="firstname", id="firstname", class="main__form--input" required placeholder="Enter your first name please")
+                i.main__form--icon
+                    svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="main__form--check" viewBox="0 0 16 16")
+                        path(d=`${ sucessfull }`)
+                i.main__form--icon
+                    svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="main__form--notcheck" viewBox="0 0 16 16")
+                        path(d=`${ anyWrong }`)
+                span.main__form--error
             
             .main__form--grid
                 label(for="lastname", class="main__form--label") Last Name
                 input(type="text", name="lastname", id="lastname", class="main__form--input" required placeholder="What is your surname?")
+                i.main__form--icon
+                    svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="main__form--check" viewBox="0 0 16 16")
+                        path(d=`${ sucessfull }`)
+                i.main__form--icon
+                    svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="main__form--notcheck" viewBox="0 0 16 16")
+                        path(d=`${ anyWrong }`)
+                span.main__form--error
             
             .main__form--grid
                 label(for="email", class="main__form--label") Email
-                input(type="email", name="email", id="email", class="main__form--input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required placeholder="Enter your email that I can reach you back!")
+                input(type="email", name="email", id="email", class="main__form--input" required placeholder="Enter your email that I can reach you back!")
+                i.main__form--icon
+                    svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="main__form--check" viewBox="0 0 16 16")
+                        path(d=`${ sucessfull }`)
+                i.main__form--icon
+                    svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="main__form--notcheck" viewBox="0 0 16 16")
+                        path(d=`${ anyWrong }`)
+                span.main__form--error
 
             .main__form--grid
                 label(for="phone", class="main__form--label") Phone number
@@ -35,9 +56,16 @@ block main
 
             .main__form--grid
                 label(for="message", class="main__form--label") Message
-                textarea(name="message", id="message", cols="30", rows="10", class="main__form--textarea" required placeholder="Say hello! Enter your message")
+                textarea(name="message", id="message", cols="30", rows="10", class="main__form--textarea" placeholder="Say hello! Enter your message")
+                i.main__form--icon
+                    svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="main__form--check" viewBox="0 0 16 16")
+                        path(d=`${ sucessfull }`)
+                i.main__form--icon
+                    svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="main__form--notcheck" viewBox="0 0 16 16")
+                        path(d=`${ anyWrong }`)
+                span.main__form--error
             div
 
-            button(type="submit", name="submit" class="main__button btn--gradient") Send
+            button(type="submit", name="submit" class="main__button btn--gradient send--btn") Send
                 svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="main__form--icon" viewBox="0 0 16 16")
                   path(fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z")

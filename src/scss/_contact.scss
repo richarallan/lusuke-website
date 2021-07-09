@@ -15,7 +15,31 @@
     &--grid {
       display: flex;
       flex-flow: column wrap;
+      position: relative;
     }
+
+    //Style custom fields and errors
+    & i {
+      position: absolute;
+      left: 95%;
+      top: 55%;
+      // visibility: hidden;
+    }
+    &--notcheck {
+      color: #E43D40;
+      // visibility: hidden;
+    }
+    &--check {
+      color: $green;
+      visibility: hidden;
+    }
+    &--sucess {
+      color: $green;
+    }
+    &--error {
+      color: #E43D40;
+    }
+    /* End of custom filds and errors contact */
 
     &--label {
       font-size: 1rem;
@@ -32,7 +56,7 @@
       height: 3rem;
       background: none;
       border: none;
-      border-bottom: 1px solid $green;
+      border-bottom: 1px solid $green; //changed green to black;
       font-size: 1rem;
 
       &::-webkit-input-placeholder,
@@ -125,3 +149,11 @@
     }
   }
 }
+
+//new class into contact.pug
+.send {
+  &--btn {
+    cursor: pointer;
+  }
+}
+// Estados
