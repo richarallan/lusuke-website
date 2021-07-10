@@ -22,8 +22,8 @@
     & i {
       position: absolute;
       left: 95%;
-      top: 55%;
-      // visibility: hidden;
+      top: 65%;
+      visibility: hidden;
     }
     &--notcheck {
       color: #E43D40;
@@ -38,6 +38,15 @@
     }
     &--error {
       color: #E43D40;
+      position: absolute;
+      bottom: -1.5rem;
+    }
+
+    & .icon.pass {
+      visibility: visible;
+    }
+    & .icon.notpass {
+      visibility: visible;
     }
     /* End of custom filds and errors contact */
 

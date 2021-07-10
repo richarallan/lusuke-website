@@ -31,12 +31,19 @@ function ValidateField(field) {
 
     function setCustomMessage(message) {
         const spanError = field.parentNode.querySelector("span.main__form--error")
+        //icon
+        const iconError = field.parentNode.querySelector("i .main__form--notcheck")
+        const iconCheck = field.parentNode.querySelector("i .main__form--check")
 
         if (message) {
             spanError.classList.add("active")
+            iconError.style.visibility = "visible"
+            iconCheck.style.visibility = "hidden"
             spanError.innerHTML = message
         } else {
             spanError.classList.remove("active")
+            iconError.style.visibility = "hidden"
+            iconCheck.style.visibility = "visible"
             spanError.innerHTML = ""
         }
     }
@@ -48,10 +55,10 @@ function ValidateField(field) {
         if (error) {
             const message = customMessage(error)
 
-            field.style.borderColor = "red"
+            field.style.borderColor = "#E43D40"
             setCustomMessage(message)
         } else {
-            field.style.borderColor = "green"
+            field.style.borderColor = "#75b9a5"
             setCustomMessage()
         }
     }
@@ -77,7 +84,7 @@ for (field of fields) {
     field.addEventListener("blur", customValidation)
 }
 
-
+const buttonD = document.querySelector(".send-btn")
 document.querySelector("form")
     .addEventListener("submit", event => {
         console.log("enviar o formulário")
