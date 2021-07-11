@@ -45,6 +45,53 @@
       grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
     }
+    &--blackground {
+      text-align: center;
+      position: relative;
+      color: $beige;
+    }
+    &--touch {
+      display: flex;
+      text-decoration: none;
+      position: relative;
+      text-align: center;
+      background-color: $beige;
+      border-bottom: 1px solid $beige;
+      padding: 8rem 0;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: $black;
+        transform-origin: 0 bottom 0;
+        transform: scaleY(1);
+        transition: .4s ease-out;
+        z-index: 0;
+      }
+      &:hover {
+        .main__page--gtouch {
+          color: $black;
+        }
+        &:before {
+          transform: scaleY(0);
+        }
+      }
+    }
+    &--gtouch {
+      @include fluid-font(2rem, 11.75rem);
+      text-transform: uppercase;
+      font-family: "Syncopate", "sans-serif";
+      font-weight: 600;
+      margin: 0 auto;
+      color: $beige;
+      transition: .4s ease-out;
+      z-index: 1;
+    }
   }
 
   // &__download {
@@ -78,6 +125,9 @@
 
       &--sharping {
         margin-top: 5rem;
+      }
+      &--touch {
+        padding: 3rem 0;
       }
     }
   }

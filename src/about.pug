@@ -97,6 +97,8 @@ block main
                 ul
                     each list2About in ['Behavior Finance', 'Investiments: Asset allocation', 'Valuation and Investment Analysis', 'Treasury Financial Mathematics', 'Financial Engineering How to create investments, products and financial services', 'Wealth management, Family Office and Third Party Resource Management', 'International investments Global and Offshore Portfolios', `${ investments }`, 'Financial products and services', 'Investment Bank']
                         li= dash + list2About
-    
+    .main__page--blackground
+        a(class="main__page--touch", href="contact.pug")
+            h2.main__page--gtouch get in touch
     //- .main__download
     //-     a(href="#", class="main__button main__button--scale") Download my resume
