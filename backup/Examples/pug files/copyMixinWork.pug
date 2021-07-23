@@ -1,0 +1,6 @@
+                if image-
+                    div.carousel-cell
+                        picture
+                            source(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 2300px", srcset=`url:assets/${ image- }-1020x574.jpg?as=webp 1020w, url:assets/${ image- }-1660x934.jpg?as=webp 1024w, url:assets/${ image- }-2300x1924.jpg?as=webp 2300w`, type="image/webp")
+                            source(srcset=`assets/${ image- }-1020x574.jpg 1020w, assets/${ image- }-1660x934.jpg 1660w, assets/${ image- }-2300x1924.jpg 2300w`, type="image/jpg")
+                            img(sizes="(max-width:540px) 1020px, (max-width:1024px) 1660px, 1350px", src="assets/1x1.gif", decoding="async", alt=`${ alt- }`)

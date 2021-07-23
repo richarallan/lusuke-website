@@ -1,0 +1,92 @@
+extends templates/layout
+
+block main
+    section.main__intro
+        picture
+            source(sizes="(max-width:375px) 375px, (min-width:376px) and (max-width:540px) 540px, (min-width:541px) and (max-width:768px) 768px, (min-width:769px) and (max-width:1920px) 1903px, 2560px", srcset="url:assets/lusuke-presentation-375x425.jpg?as=webp 375w, url:assets/lusuke-presentation-540x612.jpg?as=webp 540w, url:assets/lusuke-presentation-768x432.jpg?as=webp 768w, url:assets/lusuke-presentation-1903x1070.jpg?as=webp 1903w, url:assets/lusuke-presentation-2560x1440.jpg?as=webp 2560w", type="image/webp")
+            source(srcset="assets/lusuke-presentation-375x425.jpg 375w, assets/lusuke-presentation-540x612.jpg 540w, assets/lusuke-presentation-768x432.jpg 768w, assets/lusuke-presentation-1903x1070.jpg 1903w, assets/lusuke-presentation-2560x1440.jpg 2560w", type="image/jpg")
+            img(sizes="(max-width:375px) 375px, (min-width:376px) and (max-width:540px) 540px, (min-width:541px) and (max-width:768px) 768px, (min-width:769px) and (max-width:1920px) 1903px, 2560px", src="assets/1x1.gif", decoding="async", role="presentation", alt="Lucas presenting your skills: beer crafter, coffee lover, garage musician, graduate economics finances and master digital marketing and design")
+    
+    section#about.main__about
+        .main__avatar
+            picture
+                source(sizes="(max-width:540px) 375px, (min-width:541px) and (max-width:768px) 540px, 802px", srcset="url:assets/lucas-sukeyosi-375x415.jpg?as=webp 375w, url:assets/lucas-sukeyosi-540x597.jpg?as=webp 540w, url:assets/lucas-sukeyosi-802x887.jpg?as=webp 802w", type="image/webp")
+                source(srcset="assets/lucas-sukeyosi-375x415.jpg 375w, assets/lucas-sukeyosi-540x597.jpg 540w, assets/lucas-sukeyosi-802x887.jpg 802w", type="image/jpg")
+                img(sizes="(max-width:540px) 375px, (min-width:541px) and (max-width:768px) 540px, 802px", src="assets/1x1.gif", decoding="async", role="presentation", class="lazyload" alt="Hi, here's a photo of Lucas Sukeyosi")
+        .main__me
+            .main__me--grid
+                h1.main--header Olá
+                    br
+                    . 
+                        I'm Lucas
+                    br
+                    . 
+                        Sukeyosi.
+                p.main--normal. 
+                    A Latin American self-taught multidisciplinary designer,
+                    with a degree in economics.
+                    
+                p.main--text You can say I’m a #[span.main--green multidisciplinary Designer or an Economist specializing in finance, investment, and banking].
+                    br
+                    br
+                    . 
+                        Other than that I’m a garage musician, 
+                        former national judo champion, always 
+                        a curious and wandering learner. An
+                        avid defender of doing things with love, 
+                        honesty, and authenticity – producing
+                        and serving humanity, always with a
+                        purpose.
+                a(href=about class="main__button btn--gradient") check my bio
+    
+    section#works.main__works
+        figure
+            img(src="url:assets/keypin02.png?as=webp", class="lazyload" alt="Latest Works" width="100" height="113" class="main__works--figure")
+        .main__works--grid
+            h1.main--header work file
+            p.main--text.
+                I thrive to go beyond the software. Passion with art since a kid, 
+                working with design since the 2000s, well, a kid also.
+            p.main--italic.
+                Some snapshots and a briefing description of each select project 
+                while I’m working on the full case studies. Other than that, this 
+                portfolio would be far from being online. Not the ideal world, but 
+                don’t forget that I’m also an Economist.
+            
+        each work in workContent
+            +work(work.client, work.roles, work.roles1, work.roles2, work.roles3, work.roles4, work.roles5, work.enterprise, work.text, work.classSlide, work.navDot, work.indexDot, work.image1, work.image2, work.image3, work.image4, work.image5, work.image6, work.image7, work.image8, work.image9, work.image10, work.alt1, work.alt2, work.alt3, work.alt4, work.alt5, work.alt6, work.alt7, work.alt8, work.alt9, work.alt10)
+        //- include templates/workcontent
+
+        .main__works--page
+            img(src="url:assets/image-unlock.png?as=webp&width=84&height=85", class="lazyload" alt="Go to my portfolio" width="84" height="85")
+            p.main__service--title #[a(href=works) You can always #[span.main--green open the door of my portfolio] #[span.main__works--risk (read here a lot of snapshots and brief description)] to see a little more.]
+    
+    //- section#blog.main__blog.blog
+    //-     h1.main--header blog
+    //-     .blog__grid
+    //-         p.main--text. 
+            
+    //-             Pieces of economics/finance, business, and design. Trying to open my 
+    //-             mind through writing, and hopefully, serve as a piece of knowledge to 
+    //-             yours.
+
+    //-         p.main--italic.
+    //-             All the posts are a reflection of 
+    //-             my own and I’m not here to sell anything. Views are personal and are 
+    //-             not recommendations.
+    //-     article.blog__contents
+    //-         .blog__image
+    //-             img(src="url:assets/bermix-studio-aX1hN4uNd-I-unsplash.jpg?as=webp&width=746", class="lazyload" alt="What the value of money?" width="746")
+    //-         .blog__frame
+    //-              ul.blog__frame--ul
+    //-                 li.blog__frame--li Economics
+    //-                 li.blog__frame--li Finance
+    //-                 li.blog__frame--li Philosophy
+
+    //-              h2.main__service--title what the value of money?
+    //-              p.blog__frame--grid.main--normal. 
+    //-                 Pieces of economics/finance, business, and design. Trying to open my 
+    //-                 mind through writing, and hopefully, serve as a piece of knowledge to 
+    //-                 yours.
+    //-              a(href="#" class="blog__frame--button") #[i.bi.bi-arrow-up-right] Read the article
+    //-     a(href="#" class="blog__grid--button main__button") check out my journal

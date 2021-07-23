@@ -1,0 +1,41 @@
+source(sizes="(max-width:540px) 540px, (min-width:541px) and (max-width:768px) 768px, 802px", srcset="url:assets/lucas-sukeyosi-540x597.jpg?as=webp 540w, url:assets/lucas-sukeyosi-768x849.jpg?as=webp 768w, url:assets/lucas-sukeyosi-802x887.jpg?as=webp 802w", type="image/webp")
+source(srcset="assets/lucas-sukeyosi-540x597.jpg 540w, assets/lucas-sukeyosi-768x849.jpg 768w, assets/lucas-sukeyosi-802x887.jpg 802w", type="image/jpg")
+img(sizes="(min-width:540px) 540px, (min-width:541px) and (max-width:768px) 768px, 802px", src="url:assets/lucas-sukeyosi-802x887.jpg?as=webp", decoding="async", role="presentation", class="lazyload" alt="Hi, here's a photo of Lucas Sukeyosi")
+
+
+source(sizes="(max-width:320px) 320px, (min-width:321px) and (max-width:375px) 375px, (min-width:376px) and (max-width:414px) 414px, (min-width:415px) and (max-width:540px) 540px, (min-width:541px) and (max-width:768px) 768px, 1024px", srcset="url:assets/lucas-sukeyosi-320x354.jpg?as=webp 320w, url:assets/lucas-sukeyosi-375x415.jpg?as=webp 375w, url:assets/lucas-sukeyosi-414x458.jpg?as=webp 414w, url:assets/lucas-sukeyosi-540x597.jpg?as=webp 540w, url:assets/lucas-sukeyosi-768x849.jpg?as=webp 768w, url:assets/lucas-sukeyosi-802x887.jpg?as=webp 1024w", type="image/webp")
+                source(srcset="assets/lucas-sukeyosi-320x354.jpg 320w, assets/lucas-sukeyosi-375x415.jpg 375w, assets/lucas-sukeyosi-414x458.jpg 414w, assets/lucas-sukeyosi-540x597.jpg 540w, assets/lucas-sukeyosi-768x849.jpg 768w, assets/lucas-sukeyosi-802x887.jpg 1024w", type="image/jpg")
+                img(sizes="(max-width:320px) 320px, (min-width:321px) and (max-width:375px) 375px, (min-width:376px) and (max-width:414px) 414px, (min-width:415px) and (max-width:540px) 540px, (min-width:541px) and (max-width:768px) 768px, 1024px", src="assets/1x1.gif", decoding="async", role="presentation", class="lazyload" alt="Hi, here's a photo of Lucas Sukeyosi")
+
+
+                picture
+                    source(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", srcset=`url:assets/${ image10 }-327x184.jpg?as=webp 327w, url:assets/${ image10 }-492x277.jpg?as=webp 492w, url:assets/${ image10 }-720x405.jpg?as=webp 720w, url:assets/${ image10 }-976x549.jpg?as=webp 976w, url:assets/${ image10 }-1350x759.jpg?as=webp 1350w`, type="image/webp")
+                    source(srcset=`assets/${ image10 }-327x184.jpg 327w, assets/${ image10 }-492x277.jpg 492w, assets/${ image10 }-720x405.jpg 720w, assets/${ image10 }-976x549.jpg 976w, assets/${ image10 }-1350x759.jpg 1350w`, type="image/jpg")
+                    img(sizes="(max-width:375px) 327px, (min-width:376px) and (max-width:540px) 492px, (min-width:541px) and (max-width:768px) 720px, (min-width:769px) and (max-width:1024px) 976px, 1350px", src="assets/1x1.gif", decoding="async", role="portfolio", alt=`${ alt10 }`)
+
+
+
+
+
+
+
+
+                        picture
+                            - var img-aWebp =`url:assets/${ image- }-1020x574.jpg?as=webp`;
+                            - var img-bWebp =`url:assets/${ image- }-1660x934.jpg?as=webp`;
+                            - var img-cWebp =`url:assets/${ image- }-2300x1924.jpg?as=webp`;
+                            - var img-aJpg = `assets/${ image- }-1020x574.jpg`;
+                            - var img-bJpg = `assets/${ image- }-1660x934.jpg`;
+                            - var img-cJpg = `assets/${ image- }-2300x1924.jpg`;
+                            //- images webp
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img-aWebp } 1020w`, type="image/webp")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img-bWebp } 1660w`, type="image/webp")
+                            source(data-srcset=`${ img-cWebp } 2300w`, type="image/webp")
+                            
+                            //- images jpg
+                            source(media="(max-width:540px) 1020px", data-srcset=`${ img-aJpg } 1020w`, type="image/jpg")
+                            source(media="(max-width:1024px) 1660px", data-srcset=`${ img-bJpg } 1660w`, type="image/jpg")
+                            source(data-srcset=`${ img-cJpg } 2300w`, type="image/jpg")
+
+                            //- tag img
+                            img(src="assets/1x1.gif", data-src=`${ img-cJpg }`, alt=`${ alt1 }`, class="lazyload")

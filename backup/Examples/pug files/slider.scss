@@ -1,0 +1,55 @@
+// * { box-sizing: border-box; }
+
+// body { font-family: sans-serif; }
+
+// .carousel {
+//   background: #FAFAFA;
+// }
+
+// .carousel-cell {
+//   width: 66%;
+//   height: 200px;
+//   margin-right: 10px;
+//   background: #8C8;
+//   counter-increment: carousel-cell;
+// }
+
+// /* cell number */
+// .carousel-cell:before {
+//   display: block;
+//   text-align: center;
+//   content: counter(carousel-cell);
+//   line-height: 200px;
+//   font-size: 80px;
+//   color: white;
+// }
+
+// .carousel-status {
+//   font-size: 24px;
+// }
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 200px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell img {
+    height: 400px;
+  }
+}
