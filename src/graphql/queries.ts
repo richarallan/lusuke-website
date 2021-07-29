@@ -30,8 +30,6 @@ export const GET_ABOUT = gql`
       descriptionSharping {
         html
       }
-      getInTouch
-      slugGetInTouch
     }
   }
 `
@@ -66,8 +64,6 @@ export const GET_ABOUT_BY_SLUG = gql`
       descriptionSharping {
         html
       }
-      getInTouch
-      slugGetInTouch
     }
   }
 `

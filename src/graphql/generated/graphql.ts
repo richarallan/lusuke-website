@@ -2537,7 +2537,7 @@ export type AboutPageQuery = (
   { __typename?: 'Query' }
   & { abouts: Array<(
     { __typename?: 'About' }
-    & Pick<About, 'id' | 'slug' | 'headingDesign' | 'headingEconomist' | 'aboutExpertise' | 'aboutSharping' | 'getInTouch' | 'slugGetInTouch'>
+    & Pick<About, 'id' | 'slug' | 'headingDesign' | 'headingEconomist' | 'aboutExpertise' | 'aboutSharping'>
     & { textDesign: (
       { __typename?: 'RichText' }
       & Pick<RichText, 'html'>
@@ -2572,7 +2572,7 @@ export type GetPageBySlugQuery = (
   { __typename?: 'Query' }
   & { about?: Maybe<(
     { __typename?: 'About' }
-    & Pick<About, 'id' | 'slug' | 'headingDesign' | 'headingEconomist' | 'aboutExpertise' | 'aboutSharping' | 'getInTouch' | 'slugGetInTouch'>
+    & Pick<About, 'id' | 'slug' | 'headingDesign' | 'headingEconomist' | 'aboutExpertise' | 'aboutSharping'>
     & { textDesign: (
       { __typename?: 'RichText' }
       & Pick<RichText, 'html'>

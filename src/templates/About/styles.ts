@@ -73,8 +73,3 @@ export const descriptionSharping = styled.div`
     color: var(--black);
   }
 `
-
-export const getInTouch = styled.h2`
-  font-size: var(--large);
-  margin-bottom: var(--large);
-`
