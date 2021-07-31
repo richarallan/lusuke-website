@@ -1,9 +1,9 @@
 import { screen, render } from '@testing-library/react'
-import TitleWrapper from '.'
+import TitleText from '.'
 
-describe('<TitleWrapp />', () => {
+describe('<TitleText />', () => {
   it('should render title text', () => {
-    render(<TitleWrapper>Buceta é bom demais</TitleWrapper>)
+    render(<TitleText>Buceta é bom demais</TitleText>)
 
     const text = screen.getByRole('heading', {
       name: /buceta é bom demais/i

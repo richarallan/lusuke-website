@@ -1,13 +1,11 @@
 import { render, screen } from '@testing-library/react'
-import TextWrapper from '.'
+import MainText from '.'
 
-describe('<TextWrapper />', () => {
+describe('<MainText />', () => {
   it('should be render a text wrapper', () => {
-    render(<TextWrapper>Aqui um texto aleatório</TextWrapper>)
+    render(<MainText>Aqui um texto aleatório</MainText>)
 
     const texto = screen.getByText(/Aqui um texto aleatório/i)
     expect(texto).toBeInTheDocument()
-
-    screen.logTestingPlaygroundURL()
   })
 })

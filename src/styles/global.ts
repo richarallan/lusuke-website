@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    font-size: 62.5%;
+    font-size: 16px; //62.5%
   }
 
   html, body, #__next {
@@ -32,7 +32,8 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     color: var(--black);
-    background: var(--background)
+    background: var(--background);
+    line-height: var(--tiny)
   }
   a {
     color: var(--black);
@@ -44,7 +45,6 @@ const GlobalStyles = createGlobalStyle`
   }
   p {
     font-size: 1.5rem;
-    line-height: var(--tiny);
   }
 `
 

@@ -1,13 +1,15 @@
 import styled from 'styled-components'
 
-export const Content = styled.section`
-  text-align: center;
+export const Green = styled.span`
+  color: var(--highlight);
+`
+
+export const Content = styled.div`
+  text-align: left;
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
-  max-width: var(--container);
-  margin: auto;
+  max-width: 414px;
 `
 
 export const HeadingDesign = styled.h1`
