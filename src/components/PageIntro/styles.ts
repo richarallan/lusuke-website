@@ -7,9 +7,18 @@ export const PageIntro = styled.section`
   max-width: 1855px;
 `
 
-export const IntroTitle = styled.h1``
+export const IntroTitle = styled.h1`
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: normal;
+`
 
-export const IntroText = styled.p``
+export const IntroText = styled.p`
+  font-family: 'Syncopate', 'sans-serif';
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 5rem 0;
+`
 
 export const IntroStrong = styled.strong`
   font-weight: 900;

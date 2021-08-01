@@ -1,9 +1,10 @@
 import { render, screen } from '@testing-library/react'
-import PageIntro from '.'
+// import PageIntro from '.'
+import { IntroText, IntroTitle } from './styles'
 
-describe('<PageIntro />', () => {
+describe('<IntroTitle />', () => {
   it('should be render a PageIntro Component', () => {
-    render(<PageIntro>maria e jose</PageIntro>)
+    render(<IntroTitle>maria e jose</IntroTitle>)
 
     const obj = screen.getByText(/maria e jose/i)
     // const obj2 = screen.getByText(/Strong is cool/i)
@@ -11,6 +12,12 @@ describe('<PageIntro />', () => {
     expect(obj).toBeInTheDocument()
     // expect(obj2).toBeInTheDocument()
     // expect(obj3).toBeInTheDocument()
+    screen.logTestingPlaygroundURL()
+  })
+  it('<IntroText />', () => {
+    render(<IntroText>mimimi mimimi nanana</IntroText>)
+    const obj2 = screen.getByText(/mimimi mimimi nanana/i)
+    expect(obj2).toBeInTheDocument()
     screen.logTestingPlaygroundURL()
   })
 })

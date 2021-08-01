@@ -7,6 +7,10 @@ type PageIntroProps = {
 const PageIntro = ({ children }: PageIntroProps) => (
   <S.PageIntro>
     <S.IntroTitle>{children}</S.IntroTitle>
+    <S.IntroText>
+      <S.IntroStrong>{children}</S.IntroStrong>
+      {children}
+    </S.IntroText>
   </S.PageIntro>
 )
 
