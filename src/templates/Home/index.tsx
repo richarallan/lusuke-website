@@ -4,6 +4,7 @@ import NormalText from 'components/NormalText'
 import TitleText from 'components/TitleText'
 import * as S from './styles'
 import HeroImage from '../../../public/img/heroimage.jpg'
+import PerfilImage from '../../../public/img/perfil-home-desktop.jpg'
 
 export default function HomeTemplate() {
   return (
@@ -18,6 +19,13 @@ export default function HomeTemplate() {
         />
       </S.IntroWrapper>
       <S.HomeWrapper>
+        <Image
+          alt="Heroimage"
+          src={PerfilImage}
+          layout="responsive"
+          width={1604}
+          height={1774}
+        />
         <TitleText>
           Olá
           <br />
