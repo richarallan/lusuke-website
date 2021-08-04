@@ -7,7 +7,7 @@ const size = {
 const device = {
   xs: `max-width: ${size.xs}`,
   sm: `max-width: ${size.sm}`,
-  lg: `min-width: ${size.lg}`
+  lg: `max-width: ${size.lg}`
 }
 
 export default { size, device }
