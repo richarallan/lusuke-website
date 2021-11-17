@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "rm -rf dist/* && rm -rf .parcel-cache/* && parcel src/index.pug",
+    "dev": "rm -rf dist/* && rm -rf .parcel-cache/* && parcel src/eventene.pug",
     "build": "parcel build src/index.pug  --public-url / --dist-dir docs"
   },
   "devDependencies": {
