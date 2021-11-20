@@ -2,12 +2,34 @@ extends templates/layout
 
 block main
     section.main__intro
-        img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="", alt="")
+        img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/eventene-heroimage.png?as=webp", srcset="url:assets/eventene-heroimage.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload")
 
     section.portfolio
-        .portfolio__item.it1
-            p Teste do Item 1
-        .portfolio__item.it2
-            p Teste do Item 2
-        .portfolio__item.it3
+        .portfolio__item
+            p.
+                #[strong Year]#[br]
+                2021
+            p.
+                #[strong Client]#[br]
+                Eventene
+            p.
+                #[strong Category]#[br]
+                Product Strategy, Mobile, #[br]UX/UI Design
+            p.
+                #[strong My Role(s)]#[br]
+                UI Design
+            p.
+                #[strong Deadline]#[br]
+                1 Month
+        .portfolio__item
+            p.
+                #[strong Overview]#[br]
+                Eventene is an all-in-one event management system for creating, organizing, and running all your events – whether face-to-face, virtual or hybrid. I was responsible for the UI design of a new feature for the product. It was a part-time remote contract.
+            p.
+                #[strong Problem]#[br]
+                Usually, Eventene is used to manage big events, like scouts’ summer camps, companies’ conventions, and so on. They were lacking an option where users can organize small ones like a tennis match or a barbecue with friends and family. Identified this user's need to have this kind of option in the app, how to implement this feature in a most simple and direct way?
+            p.
+                #[strong Solution]#[br]
+                We created a reservation section, where the member can filter the organization who they want to make a new reservation – in four simple steps: from picking what they want to reserve, with who, and which day and hour. I followed the Eventene's Design System for the visual, my function as UI designer was basically mapping the user journey for the “resource booking” (the beta name for the feature), designing the wireframes and the low fidelity prototypes, the high-fidelity prototypes, and finally, the final screens.
+        .portfolio__item
             p Teste do Item 3
