@@ -1,7 +1,7 @@
-extends templates/layout
+extends templates/caseStudie
 
 block main
-    section.main__intro
+    section.main__intro.portfolio--heroimg
         img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/eventene-heroimage.png?as=webp", srcset="url:assets/eventene-heroimage.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload")
 
     section.portfolio
@@ -31,5 +31,39 @@ block main
             p.
                 #[strong Solution]#[br]
                 We created a reservation section, where the member can filter the organization who they want to make a new reservation – in four simple steps: from picking what they want to reserve, with who, and which day and hour. I followed the Eventene's Design System for the visual, my function as UI designer was basically mapping the user journey for the “resource booking” (the beta name for the feature), designing the wireframes and the low fidelity prototypes, the high-fidelity prototypes, and finally, the final screens.
-        .portfolio__item
-            p Teste do Item 3
+        .portfolio__item.items
+            .items__first
+                .items__first--contents
+                    img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/01STEP.png?as=webp", srcset="url:assets/01STEP.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload portfolio--img")
+                .items__first--contents
+                    img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/02STEP.png?as=webp", srcset="url:assets/02STEP.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload portfolio--img")
+                .items__first--contents
+                    img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/03STEP.png?as=webp", srcset="url:assets/03STEP.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload portfolio--img")
+                .items__first--contents
+                    img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/04STEP.png?as=webp", srcset="url:assets/04STEP.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload portfolio--img")
+            .items__second
+                img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/eventene-fastjourney.png?as=webp", srcset="url:assets/eventene-fastjourney.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload portfolio--img")
+                p.items__second--text.
+                    Fast forward roughly low-fidelity wireframes.
+            .items__third
+                .items__third--contents
+                    img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/eventene-casestudie-1.png?as=webp", srcset="url:assets/eventene-casestudie-1.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload portfolio--img")
+                .items__third--contents
+                    img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/eventene-casestudie-2.png?as=webp", srcset="url:assets/eventene-casestudie-2.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload portfolio--img")
+                    
+            .items__fourth
+                .items__fourth--contents
+                img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/studie-case-1.png?as=webp", srcset="url:assets/studie-case-1.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload portfolio--img")
+                .items__fourth--contents
+                    img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/studie-case-2.png?as=webp", srcset="url:assets/studie-case-2.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload portfolio--img")
+                .items__fourth--contents
+                    img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/studie-case-3.png?as=webp", srcset="url:assets/studie-case-3.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload portfolio--img")
+                .items__fourth--contents
+                    img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/studie-case-4.png?as=webp", srcset="url:assets/studie-case-4.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload portfolio--img")
+                .items__fourth--contents
+                    img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/studie-case-5.png?as=webp", srcset="url:assets/studie-case-5.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload portfolio--img")
+                .items__fourth--contents
+                    img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/studie-case-6.png?as=webp", srcset="url:assets/studie-case-6.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload portfolio--img")
+    .main__page--blackground
+        a(class="main__page--touch", href="contact.pug")
+            h2.main__page--gtouch get in touch

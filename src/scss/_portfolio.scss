@@ -1,3 +1,6 @@
+.white__bg {
+    background: #ffffff;
+}
 .portfolio {
     max-width: 1400px;
     margin: 0 auto;
@@ -6,7 +9,7 @@
 
     &__item {
         flex: 1;
-        background: tomato;
+        // background: tomato;
         font-size: 24px;
 
         & > p {
@@ -14,20 +17,69 @@
         }
     }
     &__item:first-of-type{
-        background: #f5f5f5;
+        // background: #f5f5f5;
         max-width: 400px;
     }
     &__item:nth-of-type(2){
-        background: #ccc;
+        // background: #ccc;
         max-width: 1050px;
     }
     &__item:nth-of-type(3){
-        background: #f5f5f5;
+        // background: #f5f5f5;
         min-width: 100%;
+    }
+    &--heroimg {
+        width: fit-content;
+    }
+    &--img {
+        max-width: 100%;
     }
 }
 
-
+.items{
+    align-items: center;
+    justify-content: center;
+    &__first {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5rem 0;
+        filter: drop-shadow(0px 8px 24px rgba(1, 176, 241, 0.08));
+        &--contents {
+            margin: 0 1.5rem;
+            width: fit-content;
+        }
+    }
+    &__second {
+        text-align: center;
+        &--text{
+            font-style: italic;
+            line-height: 19px;
+            font-size: 16px;
+            color: #b3b3b3;
+            margin: 2rem 0 5rem 0;
+        }
+    }
+    &__third {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    &__fourth{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+    }
+}
+//MaxViewport
+@media screen and (min-width: 1025px) {
+    .portfolio {
+        &--heroimg {
+            margin-bottom: 5rem;
+        }
+    }
+}
 //Tablet view 1024px
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .portfolio {

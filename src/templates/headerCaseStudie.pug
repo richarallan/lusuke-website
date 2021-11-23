@@ -1,0 +1,11 @@
+a.menu__logotype(href=home)
+    img(src="assets/icon-logo.svg", alt="Lusuke Website", class="menu__logotype--mobile")
+    img(src="assets/lusuke__logo--desktop.svg", alt="Lusuke Website", class="menu__logotype--desktop")
+
+label(for="menu__mob") &#9776;
+input(type="checkbox", name="menu__mob", id="menu__mob", class="menu--mobile")
+nav.menu--nav
+    ul.menu__navigation
+        each val, key in {'index.pug': 'home', 'about.pug': 'about'}
+            li.menu__item: a.menu__link--risk.menu__link--metis.menu__link(href=`${ key }`): span.menu__link--span= val
+        li.menu__item: a(class="menu__link btn--gradient", href="contact.pug") say hello
