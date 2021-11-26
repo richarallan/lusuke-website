@@ -55,6 +55,30 @@ block main
                 young kid; working with design since the 2000s (well, a kid also).
             p.main--italic.
                 Here you will find snapshots and a brief description of selected projects, while I work on full case studies. Other than that, this portfolio would be far from being online.
+
+        .index__portfolio
+            .index__portfolio--contents
+                .index__contents
+                    .index__contents--head
+                        p.
+                            #[strong Year] #[br]2021
+                    .index__contents--head
+                        p.
+                            #[strong Client] #[br]Eventene
+                    .index__contents--head
+                        p.
+                            #[strong My role(s)] #[br]UI Designer
+                    .index__contents--head
+                        p.
+                            #[strong Deadline] #[br]1 Month
+                p.index__contents--title.
+                    EVENTENE
+                p.align__portfolio.
+                    Eventene is an all-in-one event management system for creating, organizing, and running all your events – whether face-to-face, virtual or hybrid. I was responsible for the UI design of a new feature for the product. It was a part-time remote contract.
+                a(href=eventene class="main__button btn--gradient") view full case study
+
+            .index__portfolio--thumb
+                img(sizes="(max-width:540px) 300px, (max-width: 1024px) 800px, 1920px", src="url:assets/eventene-thumb.png?as=webp", srcset="url:assets/eventene-thumb.png?as=webp" alt="smartphone with eventene app calendar", class="lazyload")
             
         each work in workContent
             +work(work.client, work.roles, work.roles1, work.roles2, work.roles3, work.roles4, work.roles5, work.enterprise, work.text, work.image1, work.image2, work.image3, work.image4, work.image5, work.image6, work.image7, work.image8, work.image9, work.image10, work.alt1, work.alt2, work.alt3, work.alt4, work.alt5, work.alt6, work.alt7, work.alt8, work.alt9, work.alt10)
